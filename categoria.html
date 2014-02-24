@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- end HTML 5 BOILERPLATE STUFF -->
+
+		<title>American Express</title>
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href="assets/stylesheets/fonts.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/stylesheets/foundation.min.css" type="text/css" />
+		<!-- we don't need this..  -->
+		
+		<!--[if IE]>
+		    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+	</head>
+	<body class="sidebar-page category">
+		<section role="main"><!-- We need this box for the menu - mobile  -->
+			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
+			<div class="main-wrapper">
+
+				<!-- <div id="header" ng-include="'partials/header.html'"></div> -->
+				<header id="header" ng-include="'partials/header.html'">
+					
+					<!-- main black header -->
+					<div class="row main-header">
+						
+						<div class="columns small-2 large-2 no-padding">
+							<!-- mobile menu link !! -->
+							<a href="#" class="mobile-btn hide-for-medium-up">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						
+						<div class="columns small-6 large-6 no-padding-right-small">
+							<a href="#" class="link-logo">
+								<img src="assets/images/logo.png" alt="Logo American Express" class="logo">
+							</a>
+						</div>
+						
+						<div class="columns small-4 large-6">
+							<div class="cards">
+								<a href="#" class="card-link">
+									<img src="assets/images/card-2.png" alt="card2" class="card">
+									<img src="assets/images/card-1.png" alt="card1" class="card">
+								</a>
+							</div>
+							<div class="cards-select-link-wrapper hide-for-small">
+								<a href="#" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
+							</div>
+							<div class="cards-select-link-wrapper hide-for-medium-up">
+								<a href="#" class="cards-select-link no-arrow">Seleccione sus Tarjetas</a>
+							</div>
+						</div>
+
+					</div>
+					
+					<!-- menu for desktop - web -->
+					<div class="row desktop-menu hide-for-small">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">
+										<span class="icon"></span>
+										<span class="text">VIAJES</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon"></span>
+										<span class="text">GASTRONOMIA</span>
+									</a>
+									
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon"></span>
+										<span class="text">COMPRAS</span>	
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon"></span>
+										<span class="text">ENTRETENIMIENTO</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icon"></span>
+										<span class="text">UNICOS</span>	
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- search form -->
+					<div class="row band-wrap">
+						<div class="header-form extra-width">
+							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
+								<label for="#">Buscador de Beneficios</label>
+							</div>
+							<div class="columns large-4 small-6 no-padding-left-large double-padding-right-large">
+								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field hide-for-small">
+								<input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up">
+								<a href="#" class="search-icon"></a>
+							</div>
+							<div class="columns large-4 small-6 no-padding-left-large double-padding-right-large">
+								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field hide-for-small">
+								<input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up">
+								<a href="#" class="dir-icon"></a>
+							</div>
+						</div>
+					</div>
+
+				</header>
+
+				<!-- <div id="content" class="container" ng-view></div> -->
+				<!-- MIDDLE SECTION -->
+				<section id="content" class="container" ng-view>
+					<div class="row page-content">
+
+						<div class="small-12 large-3 columns sidebar-column">
+							<h2>FILTROS</h2>
+
+							<section class="radios">
+								<div><input type="radio" name="beneficios"><label for="beneficios">Beneficios</label></div>
+								<div><input type="radio" name="membership-rewards"><label for="membership-rewards">Membership Rewards</label></div>
+							</section>
+							<section class="filter-button">
+								<a href="#" class="filter-link">FILTRAR</a>
+							</section>
+							<section class="checks-section">
+								<h3>Gastronom&iacute;a</h3>
+								<!-- first level items -->
+								<ul>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+									
+										<!-- second level items -->
+										<ul>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Tipo de Comida <span class="number-check">(145)</span></label>
+											</li>
+										</ul>
+									</li>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Barrio/Localidad <span class="number-check">(2)</span></label>
+									
+										<!-- second level items -->
+										<ul>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Costanera Norte <span class="number-check">(1)</span></label>
+											</li>
+											<li class="check-row level-2">
+												<input type="checkbox" name="item">
+												<label for="item">Recoleta <span class="number-check">(1)</span></label>
+											</li>
+										</ul>
+									</li>
+								</ul>	
+
+							</section>
+							<section class="checks-section">
+								<h3>Beneficio</h3>
+								<!-- first level items -->
+								<ul>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Promociones <span class="number-check">(59)</span></label>
+									</li>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Cuotas sin Inter&eacute;s <span class="number-check">(6)</span></label>
+									</li>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Canje por puntos <span class="number-check">(609)</span></label>
+									</li>
+								</ul>	
+
+							</section>
+
+							<section class="checks-section">
+								<h3>Acceso</h3>
+								<!-- first level items -->
+								<ul>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Con Certificado <span class="number-check">(0)</span></label>
+									</li>
+									<li class="check-row level-1">
+										<input type="checkbox" name="item">
+										<label for="item">Sin Certificado <span class="number-check">(674)</span></label>
+									</li>
+								</ul>	
+
+							</section>
+							<section class="filter-button">
+								<a href="#" class="filter-link">FILTRAR</a>
+							</section>
+
+						</div>
+
+						<div class="small-12 large-9 columns main-column">
+							<div class="results-head row">
+								<div class="columns large-6 small-12 header-col">
+									<h2><span class="results-number">30</span> resultados para <strong>"gastronom&iacute;a"</strong></h2>
+								</div>
+								<div class="columns large-6 small-12 conf-col">
+									<label for="critery">Ordenar</label>
+									<select name="critery" id="critery">
+										<option value="Beneficio">Beneficio</option>
+										<option value="Beneficio2">Beneficio2</option>
+									</select>
+									<label for="cant-number">Ver</label>
+									<select name="cant-number" id="cant-number">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</div>
+
+							</div>
+							<article class="art">
+								<div class="col-13"><img src="http://placehold.it/80x80" alt="new-image"></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Categoria: </span><a href="#">de Autor</a></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><img src="http://placehold.it/80x80" alt="new-image"></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Categoria: </span><a href="#">de Autor</a></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><img src="http://placehold.it/80x80" alt="new-image"></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Categoria: </span><a href="#">de Autor</a></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><img src="http://placehold.it/80x80" alt="new-image"></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Categoria: </span><a href="#">de Autor</a></div>
+								</div>
+							</article>
+							<div class="foot-pagination">
+								<a href="#" class="prev"><span><<</span> Anterior</a>
+								<ul class="pag">
+									<li><a href="#" class="page-link">1</a></li>
+									<li><a href="#" class="page-link current-page">2</a></li>
+									<li><a href="#" class="page-link">3</a></li>
+									<li><a href="#" class="page-link">4</a></li>
+									<li><a href="#" class="page-link">5</a></li>
+									<li><a href="#" class="page-link">6</a></li>
+								</ul>
+								<a href="#" class="next">Siguiente <span>>></span></a>
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+
+				<!-- <div id="footer" ng-include="'partials/footer.html'"></div> -->
+				<footer id="footer" ng-include="'partials/footer.html'">
+					<div class="row band-wrap">
+						<div class="footer-band extra-width">	
+						</div>
+					</div>
+					<div class="row main-logo">
+						<div class="small-12 large-12">
+							<span class="slogan"></span>
+							<img src="assets/images/logo-amex.png" alt="Libere su potencial" class="logo-footer">	
+						</div>
+					</div>
+
+					<div class="row footer-links-wrapper">
+						<a href="#" class="footer-link">T&eacute;rminos y Condiciones</a>
+						<span>|</span>
+						<a href="#" class="footer-link">Marcas Registradas</a>
+						<span>|</span>
+						<a href="#" class="footer-link">Privacidad y Confidencialidad</a>
+						<span>|</span>
+						<!-- <a href="#" class="footer-link">Direcci&oacute;n</a> --><span>Direcci&oacute;n General de Defensa y Protecci&oacute;n al Consumidor para denuncias y/o consultas ingrese </span><a href="#" class="footer-link">aqu&iacute;</a>
+					</div>
+
+					<div class="row copyright">
+						<p>
+							Copyright &copy; 2014 American Express Argentina S.A. Todos los Derechos Reservados.
+						</p>
+					</div>
+				</footer>
+
+			</div>
+		</section><!-- end role main -->
+
+		<!-- menu mobile -->
+		<section id="sidebar" role="complementary">
+			<div class="main-menu">
+		  		<div class="logo-mobile">
+					<div class="logo-blog">
+						<a href="#">
+							CATEGORIAS
+						</a>
+					</div>
+					
+				</div>
+				<!-- <hr> -->
+				
+				<nav role="navigation" id="sideMenu">
+					<ul class="nav-bar" id="sideMainNav">
+						<li><a class="current" href="http://theuxdepartment.com/en/home">VIAJES</a></li>
+						<li><a href="http://theuxdepartment.com/en/ourwork">GASTRONOMIA</a></li>
+						<li><a href="http://theuxdepartment.com/en/oursquad">COMPRAS</a></li>
+						<li><a href="http://zurb.com/blog">ENTRETENIMIENTOS</a></li>
+						<li><a href="http://theuxdepartment.com/en/contact">UNICOS</a></li>
+					</ul>
+				</nav> 			
+			</div>
+		</section>
+		<!-- end menu mobile -->
+
+<!-- 
+		<div id="dialog">
+			<div id="message">cuadro dialogo - mensaje</div>
+		</div> -->
+
+<!--	THIS ARE SCRIPT TAGS THAT YOU GUYS SUGEST TO ADD ON THE HTML -->
+<!--
+		<script src="lib/jquery/jquery-2.0.3.min.js"></script>
+		<script src="lib/jquery/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-resource.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/filters.js"></script>
+		<script src="js/directives.js"></script>-->
+		<script src="assets/javascripts/jquery-2.1.0.min.js"></script>
+		<script src="assets/javascripts/foundation.min.js"></script>
+		
+		<script>
+		    $(document).foundation();
+		</script>
+		
+		<script>
+				$(document).ready(function(){
+				    $("a.mobile-btn").click(function (e) {
+						e.preventDefault();
+						e.stopPropagation();
+						$("body").toggleClass("active");
+					// $(".mobile-nav-menu").slideToggle("slow");
+					});
+				});
+		</script>
+
+	</body>
+</html>
