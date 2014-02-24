@@ -420,6 +420,113 @@ body.category{
     }
 }
 
+body.two-columns-page{
+    .container{
+        
+
+        .page-content{
+            padding-top: 1.2em;
+
+            padding-bottom: 6.2em;
+            .link-back-wrapper {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            .link-back {
+                font-family: Helvetica;
+                font-size: 0.9em;
+                font-weight: 100;
+            }
+
+            .link-back:hover{
+                color: $blue-site;
+                // text-decoration: underline
+                span{
+                    text-decoration: none;
+                }
+
+                span.text{
+                    text-decoration: underline;
+                }
+            }
+
+            span{
+                font-size: 0.8em;
+                padding-right: 5px;
+            }
+
+            article.art{
+                h3,h4{
+                    display: block;
+                }
+
+                h3{
+                    font-family: Helvetica;
+                    font-size: 1.5em;
+                    font-weight: inherit;
+                    line-height: 0.7em;
+                    padding-top: 0.3em;
+
+                    
+                }
+
+                h4{
+                    .points-number {
+                        font-family: inherit;
+                        line-height: 1.8em;
+                    }
+                }
+
+                padding-bottom: 2.2em;
+                border-bottom: 1px solid #F1F1F1;
+            }
+
+            .right-column-wrapper {
+                background: none repeat scroll 0 0 #F6F6F6;
+                padding: 0.9375em;
+                
+                h2{
+                    color: $blue-sidebar;
+                    font-weight: 400;
+                    border-bottom: 1px solid #D2D2D2;
+
+
+                }
+
+                ul.list {
+                    color: $blue-site;
+                    list-style: disc outside none;
+                    padding-left: 0.9375em;
+                    margin-left: 0.3em;
+                    margin-bottom: 0;
+                    li{
+                        font-size: 0.85em;
+                        padding-bottom: 1.1em;
+                        padding-left: 0.2em;
+
+                        a{
+                            font-family: Helvetica,Arial;
+                            font-size: 1em;
+                            font-weight: 100;
+
+                            &:hover{
+                                text-decoration: underline;
+                                color: $blue-site;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+
 /* Menu responsive - styles */
 
 body.off-canvas {
