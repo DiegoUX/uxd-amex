@@ -383,29 +383,7 @@
 		    $(document).foundation();
 		</script>
 		
-		<script>
-				$(document).ready(function(){
-				    $("a.mobile-btn").click(function (e) {
-						e.preventDefault();
-						e.stopPropagation();
-						$("body").toggleClass("active");
-					// $(".mobile-nav-menu").slideToggle("slow");
-					});
-				});
-		</script>
-
-
-		<script>
-			$(document).ready(function(){
-				// $(".accordions-wrapper .acc-item-content").hide();
-				$(".accordions-wrapper h3.link-acc").click(function(){
-					$(this).next(".acc-item-content").slideToggle("slow");
-					$(this).toggleClass("active");
-					$(this).siblings("h3").removeClass("active");
-				});
-
-			});
-		</script>
+		<script src="assets/javascripts/site.js"></script>
 
 	</body>
 </html>
