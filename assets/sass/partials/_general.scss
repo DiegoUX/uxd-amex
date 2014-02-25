@@ -1,5 +1,9 @@
 body{
 	
+    .uppercase-text{
+        text-transform: uppercase;
+    }
+
     h1,h2,h3,h4,h5,h6{
         color: $blue-site;
         font-family: $basicFontFamily;
@@ -155,6 +159,17 @@ body{
         }
 
         .orbit-test-wrap{
+            .orbit-container{
+                ul.orbit-slides-container{
+                    li{
+                        background: none repeat scroll 0 0 $dark;
+                        text-align: center;
+                        img{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
             .orbit-next, .orbit-prev, .orbit-timer, .orbit-slide-number,.orbit-bullets{
                 display: none;
             }
@@ -227,6 +242,7 @@ body.category{
         .sidebar-column{
             padding-left: 0;
             padding-right: 0;
+            background: #F1F1F1;
             h2{
                 color: $blue-sidebar;
                 font-size: 1.5em;
@@ -420,11 +436,59 @@ body.category{
     }
 }
 
+body.two-columns-page.detalle-viajes{
+    article.art{
+        padding-bottom: 1.6em !important;
+    }
+}
+
 body.two-columns-page{
     .container{
         
 
         .page-content{
+
+            div.cards-ben{
+                border-bottom: 1px solid #F1F1F1;
+                border-top: 1px solid #F1F1F1;
+                padding-bottom: 1em;
+                padding-top: 1em;
+                margin-top: 1.5em;
+
+                a{
+                    display: inline-block;
+                    max-width: 100%;
+                    margin-left: -2%;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                h3{
+                    color: #939393;
+                    font-family: 'Helvetica','Arial';
+                    font-size: 0.8em;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 0.8em;
+                    font-weight: 100;
+                    font-family: 'Helvetica','Arial';
+                    color: $gray-text;
+                    padding-top: 0.3em;
+                    padding-bottom: 0.3em;
+
+                }
+
+                ul{
+                    margin: 0;
+                    li{
+                        display: inline-block;
+                        padding-right: 0.2em;
+                    }
+                }
+            }
             padding-top: 1.2em;
 
             padding-bottom: 6.2em;
@@ -500,6 +564,9 @@ body.two-columns-page{
                     padding-left: 0.9375em;
                     margin-left: 0.3em;
                     margin-bottom: 0;
+                    max-height: 720px;
+                    overflow: auto;
+
                     li{
                         font-size: 0.85em;
                         padding-bottom: 1.1em;
@@ -520,11 +587,201 @@ body.two-columns-page{
 
 
             }
+
+            h2.column-bar{
+                background: none repeat scroll 0 0 #309D44;
+                border-bottom: 0 none;
+                color: #FFFFFF;
+                font-family: Helvetica;
+                font-size: 0.8em;
+                font-weight: 100;
+                letter-spacing: 0.1em;
+                margin-bottom: 1em;
+                padding-top: 0.5em;
+                position: relative;
+                right: 1.9em;
+                text-align: center;
+                width: 100%;
+
+                .left-triangle {
+                  border-left: 18px solid rgba(0, 0, 0, 0);
+                  border-top: 11px solid #186227;
+                  bottom: -10px;
+                  display: inline-block;
+                  height: 0;
+                  left: -9px;
+                  padding: 0 !important;
+                  position: absolute;
+                  width: 0;
+                }
+
+                &:before{
+                    border-bottom: 28px solid #309D44;
+                    border-left: 10px solid rgba(0, 0, 0, 0);
+                    border-right: 0 solid rgba(0, 0, 0, 0);
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    left: -9px;
+                    position: absolute;
+                    top: -1px;
+                    width: 0;
+                }
+
+                &:after{
+                    border-bottom: 28px solid #309D44;
+                    border-right: 10px solid rgba(0, 0, 0, 0);
+                    border-left: 0 solid rgba(0, 0, 0, 0);
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    right: -9px;
+                    position: absolute;
+                    top: -1px;
+                    width: 0;
+
+
+                }
+            }
+
+            a.change-now{
+                background: none repeat scroll 0 0 #019BDB;
+                border-radius: 3px;
+                color: #FFFFFF;
+                display: inline-block;
+                font-size: 0.75em;
+                margin-top: 0.3em;
+                padding: 0.7em;
+
+                &:hover{
+                    background: $blue-current-menu;
+                }
+            }
+
+            .accordions-wrapper{
+
+                .acc{
+                    
+                    h3.link-acc {
+                        color: $dark-text;
+                        font-size: 0.9em;
+                        font-weight: 100;
+                        padding-top: 1em;
+                        padding-bottom: 0.2em;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        .more-icon:after {
+                            content: "\e60a";
+                            font-family: 'icomoon';
+                            color: $blue-site;
+                            font-size: 1.9em;
+                            font-weight: 100;
+                            line-height: 1em;
+                            position: relative;
+                            top: 0.2em;
+                        }
+
+                        .more-icon{
+                            float: right;
+                        }
+
+                    }
+                    h3.link-acc.active{
+                        .more-icon:after {
+                            content: "\e609";
+                            font-family: 'icomoon';
+                        }
+                    }
+
+                    .acc-item-content{
+                        p{
+                            color: $gray-text;
+                            font-size: 0.9em;
+                            font-weight: 100;
+                            font-family: 'Helvetica','Arial';
+                            line-height: 1.4em;
+
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    &.detalle-viajes{
+        .container{
+            .page-content{
+                padding-bottom: 2.2em;    
+            }
+
         }
     }
 }
 
+body.two-columns-page.detalle{
+    article.art{
+        padding-bottom: 1.6em !important;
+        p.validez{
+            padding-top:1em;
 
+            span{
+                color: $blue-site;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    ul.list{
+        max-height: 320px !important;
+        list-style: none !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+
+        & > li:before {
+            content: "";
+            font-family: 'icomoon';
+            font-size: 1.2em;
+            position: absolute;
+            top: -2px;
+            left: 0;
+            padding-left: 0.3em;
+        }
+
+        & > li{
+            position:relative;
+            padding-left: 1.6em !important;
+            a{
+                font-size: 1.1em;
+            }
+
+            p{
+                color: $gray-text;
+                // padding-left: 1.5em;
+            }
+        }
+    }
+
+    .map{
+
+        box-shadow: 0 0 2px 2px #DDDDDD;
+        margin-bottom: 30px;
+        padding: 10px;
+
+        & > small{
+            display: none;
+        }
+
+        & > iframe{
+            width: 100%;
+        }
+    }
+}
 
 
 /* Menu responsive - styles */

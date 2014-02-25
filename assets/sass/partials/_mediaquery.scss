@@ -44,6 +44,24 @@
 	    }
 	} 
 
+	body.two-columns-page{
+		.main-wrapper{
+			.page-content{
+				h2.column-bar{
+					&:before, &:after, span.left-triangle{
+						display: none;
+					}
+
+					margin-left: -1.2em !important;
+					margin-right: -1.2em !important;
+					right: 0 !important;
+					width: auto !important;
+				}
+
+			}
+		}
+	}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -81,6 +99,19 @@
 		div.page-content{
 			background: #FFFFFF;
 			.sidebar-column{
+				.header-col{
+					h2{
+						margin: 1.6em 0 0.7em !important;
+					}
+				}
+
+				.conf-col{
+					text-align: center !important;
+					margin-bottom: 1em;
+					margin-top: 0.3em;
+				}
+
+
 				background: #F1F1F1;
 			}
 
@@ -115,6 +146,10 @@
 
 @media only screen and (max-width: 767px) {
 	// menu - responsive styles
+	
+	.ta-center-for-small{
+		text-align: center;
+	}
 
 	.active [role=main] {
 	    margin-right: -85%;
@@ -309,6 +344,10 @@
 			footer{
 				.footer-links-wrapper,.copyright{
 					text-align: left !important;
+				}
+
+				.copyright{
+					margin-top: 0.7em;
 				}
 			}
 
