@@ -18,11 +18,22 @@
 	    		width: 19%;
 	    		a{
 	    			padding: 0.5em 0;
+	    			span.icon:before{
+	    				padding-right: 0em;
+	    			}
 	    		}
 	    	}
 
 	    	li:nth-child(4){
 				width: 24%;
+				span.text{
+					padding-left: 2.3em;
+				}
+	    	}
+	    	li:nth-child(5){
+				span.text{
+					padding-left: 1em;
+				}
 	    	}
 	    }
 	} //end header styles media

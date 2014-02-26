@@ -48,7 +48,7 @@ body{
         margin-right: -2.2%;
         padding-left: 1.47%;
         padding-right: 2.2%;
-        padding-top: 20px;
+        padding-top: 17px;
     }
     
     .page-content {
@@ -162,12 +162,24 @@ body{
             .orbit-container{
                 ul.orbit-slides-container{
                     li{
-                        background: none repeat scroll 0 0 $dark;
+                        background: none repeat scroll 0 0 #000000;
                         text-align: center;
                         img{
                             display: inline-block;
                         }
                     }
+
+                    // li:nth-child(1){
+                    //     background: none repeat scroll 0 0 $dark;
+                    // }
+
+                    // li:nth-child(2){
+                    //     background: none repeat scroll 0 0 #010101;
+                    // }
+
+                    // li:nth-child(3){
+                    //     background: none repeat scroll 0 0 #000000;
+                    // }
                 }
             }
             .orbit-next, .orbit-prev, .orbit-timer, .orbit-slide-number,.orbit-bullets{
@@ -316,6 +328,23 @@ body.category{
                     line-height: 1.6em;
                     padding-left: 10.9%;
                     padding-right: 10.9%;
+                    cursor: pointer;
+
+                    &:after{
+                        content: "+";
+                        float: right;
+                        font-family: "icomoon";
+                        font-weight: 100 !important;
+                        position: relative;
+                        top: -3px;
+                    }
+
+                    &.active:after{
+                        content: "-";
+                        font-size: 1.5em;
+                        top: -7px;
+                        
+                    }
                 }
 
                 input[type="checkbox"]{
