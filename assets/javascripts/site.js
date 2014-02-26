@@ -60,17 +60,48 @@ $(document).ready(function(){
 	});
 
 $(document).ready(function(){		
-		$("#cards-selection-web li").click(function(){
+		$("#cards-selection-web li,#cards-selection-mobile li").click(function(){
+			//var checkeds = $("#cards-selection-web li:nth-child(2)").parents("ul").find("input:checked").size();
+			var checkeds = $(this).parents("ul").find("input:checked").size();
 
-			$(this).toggleClass("on-check");
-			
-			if ( $(this).find(".check-field").is(':checked') ){
-				$(this).find(".check-field").prop('checked',false);
-			}
-			else{
-				$(this).find(".check-field").prop('checked',true);
-			}
-				
+				if ( $(this).find(".check-field").is(':checked') ){
+					$(this).find(".check-field").prop('checked',false);
+					$(this).toggleClass("on-check");
+				}
+
+				else{
+					if(checkeds >= 2){
+						// alert("You can't!");
+					}
+					else{
+						$(this).find(".check-field").prop('checked',true);
+						$(this).toggleClass("on-check");
+					}
+				}
+
 		});
 	});
 
+$(document).ready(function(){		
+		$("#cards-selection-web li .check-field,#cards-selection-mobile li .check-field").click(function(e){
+			e.stopPropagation();
+			$(this).parents("li").toggleClass("on-check");
+			// e.preventDefault();
+		});
+	});
+
+
+$(document).ready(function(){		
+		$("#cards-selection-mobile").hide();
+		$(".hide-for-medium-up .cards-select-link.no-arrow, #cards-selection-mobile > a.app").click(function(){
+			$("#cards-selection-mobile").slideToggle("slow");
+		});
+	});
+
+$(document).ready(function(){
+		$(window).resize(function(){
+			if( $(window).width() > 767){
+				$("#cards-selection-mobile").hide();
+			}
+		});
+});

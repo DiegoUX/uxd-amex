@@ -51,7 +51,7 @@
 	        margin-right: 0;
 	        padding-left: 0;
 	        padding-right: 0;
-	        padding-top: 10px;
+	        padding-top: 15px;
 	    }
 
 	    .col-80,.col-87{
@@ -80,6 +80,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+	.hide-for-768-up{
+		display: none;
+	}
+
 	body{
 			.columns.double-padding-right-large {
 		    	padding-right: 1.875em;
@@ -264,7 +268,7 @@
 			margin-top: 18px;
 		}
 
-
+		
 		
 	}
 
@@ -281,6 +285,82 @@
 			header{
 				.main-header{
 					padding-bottom: 1em;
+
+					#cards-selection-mobile{
+						background: none repeat scroll 0 0 #FFFFFF;
+						padding: 0;
+						margin-top: 1em;
+						ul{
+
+			                margin: 0;
+			                li{
+			                    padding: 0.5em 0.1em 0.5em 0.1em;
+			                    // border-top: 1px solid #FFFFFF;
+			                    border-top: 0 !important;
+			                    border-bottom: 1px solid #E1E1E1;
+
+			                    &:hover,&.on-check{
+			                        background:#E1E1E1;
+			                        border-bottom: 1px solid #FFFFFF;
+			                    }
+
+			                    div.lit-col-5,div.lit-col-15,div.lit-col-75{
+			                        display: inline-block;
+
+			                    }
+
+			                    .lit-col-5{
+			                        text-align: center;
+			                        width: 10%;
+			                    }
+
+			                    .lit-col-15{
+			                        width: 15%;
+			                    }
+
+			                    .lit-col-75{
+			                        width: 70%;
+			                        vertical-align: middle;
+			                        font-weight: 100;
+			                        padding-left: 0.5em;
+			                        span{
+			                            font-family: Helvetica, Arial;
+			                            top: 2px;
+			                            position: relative;
+
+			                        }
+			                    }
+
+			                    label,img,input{
+			                        display: inline-block;
+			                    }
+
+			                    span{
+			                        color: $blue-site;
+			                    }
+			                }
+			            }//end ul
+
+			            &:before,&:after{
+			                display: none;
+			            }
+
+			            a.app{
+			                padding: 0.5em 0.5em;
+			                display: inline-block;
+			                width: 100%;
+			                background: $blue-site;
+			                color: #FFFFFF;
+			                text-transform: uppercase;
+			                text-align: center;
+
+			                &:hover{
+			                    background: $blue-current-menu;
+			                }
+
+			            }
+
+					}//#cards-selection-mobile end
 				}
 
 				.header-form {
@@ -342,7 +422,9 @@
 				
 				.cards{
 					padding-top: 20px !important;
+					text-align: center !important;
 					.card-link{
+						margin-right: 0px !important;
 						.card{
 							max-width: 50%;
 						}
