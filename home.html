@@ -60,11 +60,11 @@
 							<div class="cards-select-link-wrapper hide-for-small">
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
-									
+								
 									<ul>
-										<li>
+										<li class="buy-card">
 											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
+												<input type="radio" name="cards-check1" class="check-field">
 											</div>
 											<div class="lit-col-15">
 												<img src="assets/images/centurion.png" alt="">
@@ -73,9 +73,9 @@
 												<span for="cards-check">Centurion from<br> American Express</span>
 											</div>
 										</li>
-										<li>
+										<li class="buy-card">
 											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
+												<input type="radio" name="cards-check1" class="check-field">
 											</div>
 											<div class="lit-col-15">
 												<img src="assets/images/Platinum.png" alt="">
@@ -84,31 +84,9 @@
 												<span for="cards-check">The Platinum Card</span>
 											</div>
 										</li>
-										<li>
+										<li class="buy-card">
 											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
-											</div>	
-											<div class="lit-col-15">
-												<img src="assets/images/Platinum-credit.png" alt="">
-											</div>	
-											<div class="lit-col-75">
-												<span for="cards-check">The Platinum Credit Card</span>
-											</div>	
-										</li>
-										<li>
-											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/aerolineas.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">The Platinum Credit Card Aerolineas Plus</span>
-											</div>
-										</li>
-										<li>
-											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
+												<input type="radio" name="cards-check1" class="check-field">
 											</div>
 											<div class="lit-col-15">
 												<img src="assets/images/Gold.png" alt="">
@@ -117,31 +95,9 @@
 												<span for="cards-check">The Gold Card</span>
 											</div>
 										</li>
-										<li>
+										<li class="buy-card">
 											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/gold-credit.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">The Gold Credit Card</span>
-											</div>
-										</li>
-										<li>
-											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/american-credit.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">La Tarjeta American Express</span>
-											</div>
-										</li>
-										<li>
-											<div class="lit-col-5">
-												<input type="checkbox" name="cards-check" class="check-field">
+												<input type="radio" name="cards-check1" class="check-field">
 											</div>
 											<div class="lit-col-15">
 												<img src="assets/images/american.png" alt="">
@@ -150,6 +106,54 @@
 												<span for="cards-check">La Tarjeta American Express</span>
 											</div>
 										</li>
+									</ul>
+									<ul>
+										<li class="credit-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check2" class="check-field">
+											</div>	
+											<div class="lit-col-15">
+												<img src="assets/images/Platinum-credit.png" alt="">
+											</div>	
+											<div class="lit-col-75">
+												<span for="cards-check">The Platinum Credit Card</span>
+											</div>	
+										</li>
+										
+										<li class="credit-card aa-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check2" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/aerolineas.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">The Platinum Credit Card Aerolineas Plus</span>
+											</div>
+										</li>
+										<li class="credit-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check2" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/gold-credit.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">The Gold Credit Card</span>
+											</div>
+										</li>
+										<li class="credit-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check2" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/american-credit.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">La Tarjeta de Cr&eacute;dito American Express</span>
+											</div>
+										</li>
+										
 									</ul>
 									<a href="#" class="app">Aplicar</a>
 								</div>
@@ -161,31 +165,55 @@
 						</div>
 						<div class="columns small-12 hide-for-768-up" id="cards-selection-mobile">
 							<ul>
-								<li>
+										<li class="buy-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check1" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/centurion.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">Centurion from<br> American Express</span>
+											</div>
+										</li>
+										<li class="buy-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check1" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/Platinum.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">The Platinum Card</span>
+											</div>
+										</li>
+										<li class="buy-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check1" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/Gold.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">The Gold Card</span>
+											</div>
+										</li>
+										<li class="buy-card">
+											<div class="lit-col-5">
+												<input type="radio" name="cards-check1" class="check-field">
+											</div>
+											<div class="lit-col-15">
+												<img src="assets/images/american.png" alt="">
+											</div>
+											<div class="lit-col-75">
+												<span for="cards-check">La Tarjeta American Express</span>
+											</div>
+										</li>
+							</ul>
+							<ul>
+								<li class="credit-card">
 									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
-									</div>
-									<div class="lit-col-15">
-										<img src="assets/images/centurion.png" alt="">
-									</div>
-									<div class="lit-col-75">
-										<span for="cards-check">Centurion from American Express</span>
-									</div>
-								</li>
-								<li>
-									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
-									</div>
-									<div class="lit-col-15">
-										<img src="assets/images/Platinum.png" alt="">
-									</div>
-									<div class="lit-col-75">
-										<span for="cards-check">The Platinum Card</span>
-									</div>
-								</li>
-								<li>
-									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
+										<input type="radio" name="cards-check2" class="check-field">
 									</div>	
 									<div class="lit-col-15">
 										<img src="assets/images/Platinum-credit.png" alt="">
@@ -194,9 +222,10 @@
 										<span for="cards-check">The Platinum Credit Card</span>
 									</div>	
 								</li>
-								<li>
+								
+								<li class="credit-card aa-card">
 									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
+										<input type="radio" name="cards-check2" class="check-field">
 									</div>
 									<div class="lit-col-15">
 										<img src="assets/images/aerolineas.png" alt="">
@@ -205,20 +234,9 @@
 										<span for="cards-check">The Platinum Credit Card Aerolineas Plus</span>
 									</div>
 								</li>
-								<li>
+								<li class="credit-card">
 									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
-									</div>
-									<div class="lit-col-15">
-										<img src="assets/images/Gold.png" alt="">
-									</div>
-									<div class="lit-col-75">
-										<span for="cards-check">The Gold Card</span>
-									</div>
-								</li>
-								<li>
-									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
+										<input type="radio" name="cards-check2" class="check-field">
 									</div>
 									<div class="lit-col-15">
 										<img src="assets/images/gold-credit.png" alt="">
@@ -227,28 +245,18 @@
 										<span for="cards-check">The Gold Credit Card</span>
 									</div>
 								</li>
-								<li>
+								<li class="credit-card">
 									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
+										<input type="radio" name="cards-check2" class="check-field">
 									</div>
 									<div class="lit-col-15">
 										<img src="assets/images/american-credit.png" alt="">
 									</div>
 									<div class="lit-col-75">
-										<span for="cards-check">La Tarjeta American Express</span>
+										<span for="cards-check">La Tarjeta de Cr&eacute;dito American Express</span>
 									</div>
 								</li>
-								<li>
-									<div class="lit-col-5">
-										<input type="checkbox" name="cards-check" class="check-field">
-									</div>
-									<div class="lit-col-15">
-										<img src="assets/images/american.png" alt="">
-									</div>
-									<div class="lit-col-75">
-										<span for="cards-check">La Tarjeta American Express</span>
-									</div>
-								</li>
+								
 							</ul>
 							<a href="#" class="app">Aplicar</a>
 						</div>

@@ -59,34 +59,101 @@ $(document).ready(function(){
 
 	});
 
+// $(document).ready(function(){
+// 		$("#cards-selection-web li,#cards-selection-mobile li").click(function(){
+			
+// 			var checkeds = $(this).parents("ul").find("input:checked").size();
+
+// 				if ( $(this).find(".check-field").is(':checked') ){
+// 					$(this).find(".check-field").prop('checked',false);
+// 					$(this).toggleClass("on-check");
+// 				}
+
+// 				else{
+// 					if(checkeds >= 2){
+						
+// 					}
+// 					else{
+// 						$(this).find(".check-field").prop('checked',true);
+// 						$(this).toggleClass("on-check");
+// 					}
+// 				}
+
+// 		});
+// });
+
+
+// gral script for radio buttons on the header's dropdown 
+
 $(document).ready(function(){		
+
 		$("#cards-selection-web li,#cards-selection-mobile li").click(function(){
-			//var checkeds = $("#cards-selection-web li:nth-child(2)").parents("ul").find("input:checked").size();
-			var checkeds = $(this).parents("ul").find("input:checked").size();
 
-				if ( $(this).find(".check-field").is(':checked') ){
-					$(this).find(".check-field").prop('checked',false);
-					$(this).toggleClass("on-check");
+			$(this).parents("ul").find("li.on-check").toggleClass("on-check");
+
+			if ( $(this).find(".check-field").is(':checked') ){
+				$(this).find(".check-field").prop('checked',false);
+				$(this).removeClass("on-check");
+			}
+
+			else{
+				$(this).find(".check-field").prop('checked',true);
+				$(this).addClass("on-check");
 				}
+		});
 
-				else{
-					if(checkeds >= 2){
-						// alert("You can't!");
-					}
-					else{
-						$(this).find(".check-field").prop('checked',true);
-						$(this).toggleClass("on-check");
-					}
-				}
+		$("#cards-selection-web li.buy-card,#cards-selection-mobile li.buy-card").click(function(){
+			$("li.aa-card.on-check").find(".check-field").prop('checked',false);
+			$("li.aa-card.on-check").removeClass("on-check");
+		});
+			
+		$("#cards-selection-web li .check-field,#cards-selection-mobile li .check-field").click(function(e){
+			e.stopPropagation();
 
+			$(this).parents("ul").find("li.on-check").toggleClass("on-check");
+
+			if ( $(this).is(':checked') ){
+				$(this).prop('checked',false);
+				$(this).parents("li").removeClass("on-check");
+			}
+			else{
+				$(this).prop('checked',true);
+				$(this).parents("li").addClass("on-check");
+			}
+
+		});
+
+		$("#cards-selection-web li.buy-card .check-field,#cards-selection-mobile li.buy-card .check-field").click(function(e){
+			e.stopPropagation();
+
+			$("li.aa-card.on-check").find(".check-field").prop('checked',false);
+			$("li.aa-card.on-check").removeClass("on-check");
 		});
 	});
 
+// particular case: click on Aerolineas Argentinas Card.
+
 $(document).ready(function(){		
-		$("#cards-selection-web li .check-field,#cards-selection-mobile li .check-field").click(function(e){
+
+		$("#cards-selection-web li.aa-card:not(on-check),#cards-selection-mobile li.aa-card:not(on-check)").click(function(){
+			
+			if ( $("li.buy-card.on-check").find(".check-field").is(':checked') ){
+				$("li.buy-card.on-check").find(".check-field").prop('checked',false);
+			}
+
+			$("li.buy-card.on-check").toggleClass("on-check");
+		});
+			
+		$("#cards-selection-web li.aa-card:not(on-check) .check-field,#cards-selection-mobile li.aa-card:not(on-check) .check-field").click(function(e){
 			e.stopPropagation();
-			$(this).parents("li").toggleClass("on-check");
-			// e.preventDefault();
+
+			
+			if ( $("li.buy-card.on-check").find(".check-field").is(':checked') ){
+				$("li.buy-card.on-check").find(".check-field").prop('checked',false);
+			}
+
+			$("li.buy-card.on-check").toggleClass("on-check");
+
 		});
 	});
 
