@@ -6,7 +6,6 @@
 	<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- end HTML 5 BOILERPLATE STUFF -->
@@ -51,16 +50,80 @@
 						</div>
 						
 						<div class="columns small-4 large-6">
-							<div class="cards">
+							<div class="cards image-card-web">
 								<a href="#" class="card-link">
-									<img src="assets/images/card-2.png" alt="card2" class="card">
-									<img src="assets/images/card-1.png" alt="card1" class="card">
+									<ul class="buy-cards-list">
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/TarjetaCenturion_2012.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/platinum.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Gold.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/American-tarjeta.png" alt="" class="card">
+										</li>
+									</ul>
+									<ul class="credit-cards-list">
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Platinum-credito.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/AA.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Gold-credito.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/American-credito.png" alt="" class="card">
+										</li>
+									</ul>
+								
+								</a>
+							</div>
+							<div class="cards image-card-mobile">
+								<a href="#" class="card-link">
+
+									<ul class="buy-cards-list">
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/TarjetaCenturion_2012.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/platinum.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Gold.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/American-tarjeta.png" alt="" class="card">
+										</li>
+									</ul>
+
+									<ul class="credit-cards-list">
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Platinum-credito.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/AA.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/Gold-credito.png" alt="" class="card">
+										</li>
+										<li class="hidden-card">
+											<img src="assets/images/cards-header/American-credito.png" alt="" class="card">
+										</li>
+									</ul>
+								
 								</a>
 							</div>
 							<div class="cards-select-link-wrapper hide-for-small">
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
-									
+									<h5 class="title-cards">
+										Tarjetas de Compra
+									</h5>
 									<ul>
 										<li class="buy-card">
 											<div class="lit-col-5">
@@ -107,6 +170,9 @@
 											</div>
 										</li>
 									</ul>
+									<h5 class="title-cards">
+										Tarjetas de Cr&eacute;dito
+									</h5>
 									<ul>
 										<li class="credit-card">
 											<div class="lit-col-5">
@@ -119,7 +185,6 @@
 												<span for="cards-check">The Platinum Credit Card</span>
 											</div>	
 										</li>
-										
 										<li class="credit-card aa-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
@@ -164,52 +229,58 @@
 							</div>
 						</div>
 						<div class="columns small-12 hide-for-768-up" id="cards-selection-mobile">
+							<h5 class="title-cards">
+								Tarjetas de Compra
+							</h5>
 							<ul>
-										<li class="buy-card">
-											<div class="lit-col-5">
-												<input type="radio" name="cards-check1" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/centurion.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">Centurion from<br> American Express</span>
-											</div>
-										</li>
-										<li class="buy-card">
-											<div class="lit-col-5">
-												<input type="radio" name="cards-check1" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/Platinum.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">The Platinum Card</span>
-											</div>
-										</li>
-										<li class="buy-card">
-											<div class="lit-col-5">
-												<input type="radio" name="cards-check1" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/Gold.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">The Gold Card</span>
-											</div>
-										</li>
-										<li class="buy-card">
-											<div class="lit-col-5">
-												<input type="radio" name="cards-check1" class="check-field">
-											</div>
-											<div class="lit-col-15">
-												<img src="assets/images/american.png" alt="">
-											</div>
-											<div class="lit-col-75">
-												<span for="cards-check">La Tarjeta American Express</span>
-											</div>
-										</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/centurion.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">Centurion from American Express</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/Platinum.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Platinum Card</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/Gold.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Gold Card</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/american.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">La Tarjeta American Express</span>
+									</div>
+								</li>
 							</ul>
+							<h5 class="title-cards">
+								Tarjetas de Cr&eacute;dito
+							</h5>
 							<ul>
 								<li class="credit-card">
 									<div class="lit-col-5">
@@ -525,6 +596,16 @@
 		</script>
 		
 		<script src="assets/javascripts/site.js"></script>
+		
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		  ga('create', 'UA-XXXXX-X', 'yoursite.com');
+		  ga('send', 'pageview');
+		</script>
 	</body>
 </html>

@@ -61,6 +61,16 @@ header{
 
     .main-header{
         background: $dark;
+        
+        #cards-selection-web h5, #cards-selection-mobile h5 {
+          border-bottom: 1px solid #E1E1E1;
+          color: #000000;
+          font-family: 'Helvetica','Arial';
+          font-size: 1em;
+          font-weight: 700;
+          padding: 15px 17px 5px;
+          text-align: left;
+        }
 
         #cards-selection-web {
             max-width: 60%;
@@ -72,7 +82,7 @@ header{
 
                 margin: 0;
                 li{
-                    padding: 0.5em 0.1em 0.5em 0.1em;
+                    padding: 0.5em 1.1em 0.5em 1.1em;
                     // border-top: 1px solid #FFFFFF;
                     border-top: 0 !important;
                     border-bottom: 1px solid #E1E1E1;
@@ -89,11 +99,15 @@ header{
 
                     .lit-col-5{
                         text-align: center;
-                        width: 10%;
+                        width: 0%;
+                        
                     }
 
                     .lit-col-15{
-                        width: 15%;
+                        width: 25%;
+                        img{
+                            padding-left: 20px;
+                        }
                     }
 
                     .lit-col-75{
@@ -284,15 +298,33 @@ header{
 
 
         .cards{
+            &.image-card-mobile{
+                display: none;
+            }
+
             padding-top: 30px;
             text-align: right;
 
             .card-link {
                 display: inline-block;
                 margin-right: 12px;
+                height: 50px;
+
+                & > ul{
+                    margin: 0;
+                    display: inline-block;
+                    & > li{
+                        display: inline-block;
+                        margin: 0;
+                        padding: 0;
+                        &.hidden-card{
+                            display: none;
+                        }
+                    }
+                }
                 .card{
                     float: right;
-                    max-width: 50%;
+                    // max-width: 50%;
                     padding-left: 2%;
                 }
             }
