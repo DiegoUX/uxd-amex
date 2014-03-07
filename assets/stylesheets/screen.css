@@ -1761,6 +1761,9 @@ a.sidebar-button h4 {
 
 /**New Styles***/
 
+#tarjetas{
+  position: relative;
+}
 
 #tarjetas .tarjetas {
     height: 100%;
