@@ -130,16 +130,8 @@ header .main-header {
   background: #18130d;
 }
 /* line 65, ../sass/partials/_header.scss */
-header .main-header #cards-selection-web h5, header .main-header #cards-selection-mobile h5 {
-  border-bottom: 1px solid #E1E1E1;
-  color: #000000;
-  font-family: 'Helvetica','Arial';
-  font-size: 1em;
-  font-weight: 700;
-  padding: 15px 17px 5px;
-  text-align: left;
-}
 /* line 75, ../sass/partials/_header.scss */
+
 header .main-header #cards-selection-web {
   max-width: 60%;
   width: 60%;
@@ -270,7 +262,7 @@ header .desktop-menu nav ul li:last-child a:before {
   display: inline-block;
   height: 0;
   position: absolute;
-  right: -11px;
+  right: -9px;
   top: 0;
   width: 0;
 }
@@ -896,13 +888,13 @@ body.two-columns-page .container .page-content div.cards-ben {
   margin-top: 1.5em;
 }
 /* line 487, ../sass/partials/_general.scss */
-body.two-columns-page .container .page-content div.cards-ben a {
+body.two-columns-page .container .page-content div.cards-ben #tarjetas{
   display: inline-block;
   max-width: 100%;
   margin-left: -2%;
 }
 /* line 491, ../sass/partials/_general.scss */
-body.two-columns-page .container .page-content div.cards-ben a img {
+body.two-columns-page .container .page-content div.cards-ben #tarjetas img {
   width: 100%;
 }
 /* line 496, ../sass/partials/_general.scss */
@@ -974,6 +966,10 @@ body.two-columns-page .container .page-content article.art h3 {
   font-weight: inherit;
   line-height: 0.7em;
   padding-top: 0.3em;
+}
+
+body.two-columns-page .container .page-content article.art h4 {
+  margin-top: 5px;
 }
 /* line 568, ../sass/partials/_general.scss */
 body.two-columns-page .container .page-content article.art h4 .points-number {
@@ -1760,3 +1756,32 @@ a.sidebar-button h4 {
     right: -8px !important;
   }
 }
+
+
+
+/**New Styles***/
+
+
+#tarjetas .tarjetas {
+    height: 100%;
+    left: 0;
+    padding-left: 1%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#tarjetas .tarjetas > li {
+    float: left;
+    height: 100%;
+    padding: 0 !important;
+    width: 16%;
+}
+
+#tarjetas .tarjetas > li span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
