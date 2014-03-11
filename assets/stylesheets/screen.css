@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -130,6 +130,7 @@ header .main-header {
   background: #18130d;
 }
 /* line 65, ../sass/partials/_header.scss */
+<<<<<<< HEAD
 header .main-header #cards-selection-web h5, header .main-header #cards-selection-mobile h5 {
   border-bottom: 1px solid #E1E1E1;
   color: #000000;
@@ -140,6 +141,10 @@ header .main-header #cards-selection-web h5, header .main-header #cards-selectio
   text-align: left;
 }
 /* line 75, ../sass/partials/_header.scss */
+=======
+/* line 75, ../sass/partials/_header.scss */
+
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header #cards-selection-web {
   max-width: 60%;
   width: 60%;
@@ -270,7 +275,7 @@ header .desktop-menu nav ul li:last-child a:before {
   display: inline-block;
   height: 0;
   position: absolute;
-  right: -11px;
+  right: -9px;
   top: 0;
   width: 0;
 }
@@ -314,45 +319,75 @@ header .desktop-menu nav ul li:last-child a {
 header .desktop-menu nav ul li a {
   display: inline-block;
   width: 100%;
+  height: 42px;
   padding: 0.5em 2.51em;
   background: #019bdb;
 }
+<<<<<<< HEAD
 /* line 267, ../sass/partials/_header.scss */
 header .desktop-menu nav ul li a:hover, header .desktop-menu nav ul li a.current, header .desktop-menu nav ul li a:active {
   background: #016891;
 }
 /* line 271, ../sass/partials/_header.scss */
+=======
+/* line 268, ../sass/partials/_header.scss */
+header .desktop-menu nav ul li a:hover, header .desktop-menu nav ul li a.current, header .desktop-menu nav ul li a:active {
+  background: #016891;
+}
+/* line 272, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .desktop-menu nav ul li a span.text {
   color: #fff;
   text-decoration: none;
 }
+<<<<<<< HEAD
 /* line 277, ../sass/partials/_header.scss */
+=======
+/* line 278, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .desktop-menu nav ul li a span.icon:before {
   color: #FFFFFF;
   font-family: 'icomoon';
   padding-right: 0.4em;
 }
+<<<<<<< HEAD
 /* line 292, ../sass/partials/_header.scss */
+=======
+/* line 293, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .link-logo {
   display: inline-block;
   margin-left: -0.9375em;
   margin-top: 3em;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 300, ../sass/partials/_header.scss */
+=======
+/* line 301, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards {
   padding-top: 30px;
   text-align: right;
 }
+<<<<<<< HEAD
 /* line 301, ../sass/partials/_header.scss */
 header .main-header .cards.image-card-mobile {
   display: none;
 }
 /* line 308, ../sass/partials/_header.scss */
+=======
+/* line 302, ../sass/partials/_header.scss */
+header .main-header .cards.image-card-mobile {
+  display: none;
+}
+/* line 309, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards .card-link {
   display: inline-block;
   margin-right: 12px;
   height: 50px;
+<<<<<<< HEAD
 }
 /* line 313, ../sass/partials/_header.scss */
 header .main-header .cards .card-link > ul {
@@ -370,17 +405,44 @@ header .main-header .cards .card-link > ul > li.hidden-card {
   display: none;
 }
 /* line 325, ../sass/partials/_header.scss */
+=======
+}
+/* line 314, ../sass/partials/_header.scss */
+header .main-header .cards .card-link > ul {
+  margin: 0;
+  display: inline-block;
+}
+/* line 317, ../sass/partials/_header.scss */
+header .main-header .cards .card-link > ul > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 321, ../sass/partials/_header.scss */
+header .main-header .cards .card-link > ul > li.hidden-card {
+  display: none;
+}
+/* line 326, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards .card-link .card {
   float: right;
   padding-left: 2%;
 }
+<<<<<<< HEAD
 /* line 333, ../sass/partials/_header.scss */
+=======
+/* line 334, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards-select-link-wrapper {
   padding-bottom: 30px;
   padding-top: 6px;
   text-align: right;
 }
+<<<<<<< HEAD
 /* line 338, ../sass/partials/_header.scss */
+=======
+/* line 339, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards-select-link-wrapper .cards-select-link {
   display: inline-block;
   color: #019bdb;
@@ -389,12 +451,20 @@ header .main-header .cards-select-link-wrapper .cards-select-link {
   font-size: 0.85em;
   font-weight: 100;
 }
+<<<<<<< HEAD
 /* line 345, ../sass/partials/_header.scss */
+=======
+/* line 346, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards-select-link-wrapper .cards-select-link:hover {
   text-decoration: none;
   color: #019bdb;
 }
+<<<<<<< HEAD
 /* line 350, ../sass/partials/_header.scss */
+=======
+/* line 351, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards-select-link-wrapper .cards-select-link:after {
   border-left: 4px solid rgba(0, 0, 0, 0);
   border-right: 4px solid rgba(0, 0, 0, 0);
@@ -407,7 +477,11 @@ header .main-header .cards-select-link-wrapper .cards-select-link:after {
   top: 0;
   width: 0;
 }
+<<<<<<< HEAD
 /* line 364, ../sass/partials/_header.scss */
+=======
+/* line 365, ../sass/partials/_header.scss */
+>>>>>>> 820213bdac383e397f11d7883108495e22a534aa
 header .main-header .cards-select-link-wrapper .cards-select-link.no-arrow:after {
   display: none;
 }
@@ -895,13 +969,13 @@ body.two-columns-page .container .page-content div.cards-ben {
   margin-top: 1.5em;
 }
 /* line 487, ../sass/partials/_general.scss */
-body.two-columns-page .container .page-content div.cards-ben a {
+body.two-columns-page .container .page-content div.cards-ben #tarjetas{
   display: inline-block;
   max-width: 100%;
   margin-left: -2%;
 }
 /* line 491, ../sass/partials/_general.scss */
-body.two-columns-page .container .page-content div.cards-ben a img {
+body.two-columns-page .container .page-content div.cards-ben #tarjetas img {
   width: 100%;
 }
 /* line 496, ../sass/partials/_general.scss */
@@ -973,6 +1047,10 @@ body.two-columns-page .container .page-content article.art h3 {
   font-weight: inherit;
   line-height: 0.7em;
   padding-top: 0.3em;
+}
+
+body.two-columns-page .container .page-content article.art h4 {
+  margin-top: 5px;
 }
 /* line 568, ../sass/partials/_general.scss */
 body.two-columns-page .container .page-content article.art h4 .points-number {
@@ -1759,3 +1837,35 @@ a.sidebar-button h4 {
     right: -8px !important;
   }
 }
+
+
+
+/**New Styles***/
+
+#tarjetas{
+  position: relative;
+}
+
+#tarjetas .tarjetas {
+    height: 100%;
+    left: 0;
+    padding-left: 1%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#tarjetas .tarjetas > li {
+    float: left;
+    height: 100%;
+    padding: 0 !important;
+    width: 16%;
+}
+
+#tarjetas .tarjetas > li span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
