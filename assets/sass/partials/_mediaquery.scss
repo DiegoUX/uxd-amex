@@ -294,7 +294,7 @@
 
 			                margin: 0;
 			                li{
-			                    padding: 0.5em 0.1em 0.5em 0.1em;
+			                    padding: 0.5em 2.1em 0.5em 2.1em;
 			                    // border-top: 1px solid #FFFFFF;
 			                    border-top: 0 !important;
 			                    border-bottom: 1px solid #E1E1E1;
@@ -311,11 +311,19 @@
 
 			                    .lit-col-5{
 			                        text-align: center;
-			                        width: 10%;
+			                        width: 0%;
+
+			                        // .check-field{
+			                        // 	left: 20px;
+			                        // 	position: relative;
+			                        // }
 			                    }
 
 			                    .lit-col-15{
-			                        width: 15%;
+			                        width: 25%;
+			                        img{
+			                        	padding-left: 35%;
+			                        }
 			                    }
 
 			                    .lit-col-75{
@@ -421,12 +429,21 @@
 				}
 				
 				.cards{
+
+					&.image-card-mobile{
+						display: block !important;
+					}
+
+					&.image-card-web{
+						display: none !important;
+					}
+					
 					padding-top: 20px !important;
 					text-align: center !important;
 					.card-link{
 						margin-right: 0px !important;
 						.card{
-							max-width: 50%;
+							// max-width: 50%;
 						}
 					}
 
@@ -523,6 +540,10 @@
 	body header#header .main-header .link-logo{
 				margin-top: 1.5em !important;
 			}
+
+	body header#header .main-header #cards-selection-mobile ul li{
+		padding: 0.5em 1.1em;
+	}
 }
 
 //only safari and chrome
