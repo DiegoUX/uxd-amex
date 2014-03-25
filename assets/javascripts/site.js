@@ -275,7 +275,15 @@ $(document).ready(function(){
 $(document).ready(function(){		
 		$("#cards-selection-mobile").hide();
 		$(".hide-for-medium-up .cards-select-link.no-arrow, #cards-selection-mobile > a.app").click(function(){
+			
 			$("#cards-selection-mobile").slideToggle("slow");
+
+		});
+	});
+
+$(document).ready(function(){		
+		$("header .header-form .search-icon, header .header-form .dir-icon,#cards-selection-mobile > a.app").click(function(e){
+			e.stopPropagation();
 		});
 	});
 
