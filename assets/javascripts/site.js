@@ -27,27 +27,24 @@ $(document).ready(function(){
 
 $(document).ready(function(){		
 		$(".slider-nav li:nth-child(1) a").click(function(){
-			$("h3.promo").empty();
-			$("h3.promo").append("2x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.");
-			// $(this).siblings("h3").removeClass("active");
+			$("div.promo-h3 > h3.promo").addClass("hide");
+			$("div.promo-h3 > h3.promo:nth-child(1)").removeClass("hide");
 		});
 
 	});
 
 $(document).ready(function(){		
 		$(".slider-nav li:nth-child(2) a").click(function(){
-			$("h3.promo").empty();
-			$("h3.promo").append("Registre su email y participe del Sorteo por 3 Smart TV 3D");
-			// $(this).siblings("h3").removeClass("active");
+			$("div.promo-h3 > h3.promo").addClass("hide");
+			$("div.promo-h3 > h3.promo:nth-child(2)").removeClass("hide");
 		});
 
 	});
 
 $(document).ready(function(){		
 		$(".slider-nav li:nth-child(3) a").click(function(){
-			$("h3.promo").empty();
-			$("h3.promo").append("Con D&eacute;bito Express participe en el sorteo de &oacute;rdenes de compra en Disco, Jumbo, Easy, Vea y Blaisten");
-			// $(this).siblings("h3").removeClass("active");
+			$("div.promo-h3 > h3.promo").addClass("hide");
+			$("div.promo-h3 > h3.promo:nth-child(3)").removeClass("hide");
 		});
 
 	});
@@ -291,6 +288,21 @@ $(document).ready(function(){
 		$(window).resize(function(){
 			if( $(window).width() > 767){
 				$("#cards-selection-mobile").hide();
+
+			}
+		});
+});
+
+$(document).ready(function(){
+		$(window).resize(function(){
+			if( $(window).width() < 768){
+				$(".search-field").attr("placeholder","Ej: Marcas, etc...");
+				$(".dir-field").attr("placeholder","Ej: Direccion, etc...");
+			}
+
+			else{
+				$(".search-field").attr("placeholder","Ej: Marcas, Restaurantes, etc...");
+				$(".dir-field").attr("placeholder","Ej: Direccion, Ciudad, etc...");
 			}
 		});
 });
