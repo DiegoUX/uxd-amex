@@ -24,7 +24,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="">
+	<body class="sidebar-page category">
 		<section role="main"><!-- We need this box for the menu - mobile  -->
 			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
 			<div class="main-wrapper">
@@ -123,7 +123,7 @@
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
 									<ul>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -134,7 +134,7 @@
 												<span for="cards-check">Centurion from<br> American Express</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -156,7 +156,7 @@
 												<span for="cards-check">The Gold Card</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -170,7 +170,7 @@
 
 									</ul>
 									<ul>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>	
@@ -203,7 +203,7 @@
 												<span for="cards-check">The Gold Credit Card</span>
 											</div>
 										</li>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>
@@ -369,12 +369,10 @@
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field">
-								<!-- <input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up"> -->
 								<a href="#" class="search-icon"></a>
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field">
-								<!-- <input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up"> -->
 								<a href="#" class="dir-icon"></a>
 							</div>
 						</div>
@@ -386,81 +384,329 @@
 				<!-- MIDDLE SECTION -->
 				<section id="content" class="container" ng-view>
 					<div class="row page-content">
-						<div class="small-12 large-6 columns left">
-							<h2 class="news">
-								NOVEDADES
-							</h2>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
+
+						<div class="small-12 large-3 columns sidebar-column">
+							<form action="#" class="filter-form">	
+								<h2>FILTROS</h2>
+
+								<section class="radios">
+									<div><input id="beneficios" type="radio" name="filtros-radios"><label for="beneficios">Beneficios</label></div>
+									<div><input type="radio" name="filtros-radios" id="membership-rewards"><label for="membership-rewards">Membership Rewards</label></div>
+								</section>
+								<section class="filter-button">
+									<a href="#" class="filter-link">FILTRAR</a>
+								</section>
+								<!-- gastronomia - checkboxsection -->
+
+								<section class="checks-section hide-for-small">
+									<h3 class="active">Gastronom&iacute;a</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item" id="item">
+											<label for="item">Tipo de Comida</label>
+										
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-1" id="item-1">
+													<label for="item-1">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-2" id="item-2">
+													<label for="item-2">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-3" id="item-3">
+													<label for="item-3">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-4" id="item-4">
+													<label for="item-4">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-5" id="item-5">
+													<label for="item-5">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-6" id="item-6">
+													<label for="item-6">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-7" id="item-7">
+													<label for="item-7">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-8" id="item-8">
+													<label for="item-8">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-9" id="item-9">
+													<label for="item-9">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-10" id="item-10">
+													<label for="item-10">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-11" id="item-11">
+													<label for="item-11">Tipo de Comida</label>
+												</li>
+											</ul>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-12" id="item-12">
+											<label for="item-12">Barrio/Localidad</label>
+										
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-13" id="item-13">
+													<label for="item-13">Costanera Norte</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-14" id="item-14">
+													<label for="item-14">Recoleta</label>
+												</li>
+											</ul>
+										</li>
+									</ul>	
+
+								</section>
+								<section class="checks-section hide-for-medium-up">
+									<h3>Gastronom&iacute;a</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1" id="item1">
+											<label for="item1">Tipo de Comida</label>
+										
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-1" id="item1-1">
+													<label for="item1-1">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-2" id="item1-2">
+													<label for="item1-2">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-3" id="item1-3">
+													<label for="item1-3">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-4" id="item1-4">
+													<label for="item1-4">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-5" id="item1-5">
+													<label for="item1-5">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-6" id="item1-6">
+													<label for="item1-6">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-7" id="item1-7">
+													<label for="item1-7">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-8" id="item1-8">
+													<label for="item1-8">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-9" id="item1-9">
+													<label for="item1-9">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-10" id="item1-10">
+													<label for="item1-10">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-11" id="item1-11">
+													<label for="item1-11">Tipo de Comida</label>
+												</li>
+											</ul>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-12" id="item1-12">
+											<label for="item1-12">Barrio/Localidad</label>
+										
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-13" id="item1-13">
+													<label for="item1-13">Costanera Norte</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item1-14" id="item1-14">
+													<label for="item1-14">Recoleta</label>
+												</li>
+											</ul>
+										</li>
+									</ul>	
+
+								</section>
+
+								<!-- beneficio - checkboxsection -->
+
+								<section class="checks-section hide-for-small">
+									<h3 class="active">Beneficio</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-15" id="item-15">
+											<label for="item-15">Promociones</label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-16" id="item-16">
+											<label for="item-16">Cuotas sin Inter&eacute;s </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-17" id="item-17">
+											<label for="item-17">Canje por puntos </label>
+										</li>
+									</ul>	
+
+								</section>
+								<section class="checks-section hide-for-medium-up">
+									<h3>Beneficio</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-15" id="item1-15">
+											<label for="item1-15">Promociones </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-16" id="item1-16">
+											<label for="item1-16">Cuotas sin Inter&eacute;s</label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-17" id="item1-17">
+											<label for="item1-17">Canje por puntos </label>
+										</li>
+									</ul>	
+
+								</section>
+
+								<!-- Acceso - checkboxsection -->
+
+								<section class="checks-section hide-for-small">
+									<h3 class="active">Acceso</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-18" id="item-18">
+											<label for="item-18">Con Certificado </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-19" id="item-19">
+											<label for="item-19">Sin Certificado </label>
+										</li>
+									</ul>	
+
+								</section>
+								<section class="checks-section hide-for-medium-up">
+									<h3>Acceso</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-18" id="item1-18">
+											<label for="item1-18">Con Certificado </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item1-19" id="item1-19">
+											<label for="item1-19">Sin Certificado </label>
+										</li>
+									</ul>	
+
+								</section>
+								<section class="filter-button">
+									<a href="#" class="filter-link">FILTRAR</a>
+								</section>
+							</form>
 
 						</div>
-						<div class="small-12 large-6 columns no-padding-left-large">
-							<h2 class="destacados">DESTACADOS</h2>
-							<div class="orbit-test-wrap">
-								<ul data-orbit data-options="timer:true;timer_speed:2500;">
-								  <li data-orbit-slide="headline-1">
-								    <img src="assets/images/slide-1.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">2x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
-								  <li data-orbit-slide="headline-2">
-								    <img src="assets/images/slide-2.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">3x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
-								  <li data-orbit-slide="headline-3">
-								    <img src="assets/images/slide-3.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">4x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
+
+						<div class="small-12 large-9 columns main-column">
+							<div class="results-head row">
+								<div class="columns large-6 small-12 header-col">
+									<h2><span class="results-number">30</span> resultados para <strong>"gastronom&iacute;a"</strong></h2>
+								</div>
+								<div class="columns large-6 small-12 conf-col">
+									<label for="critery">Ordenar</label>
+									<select name="critery" id="critery">
+										<option value="Beneficio">Beneficio</option>
+										<option value="Beneficio2">Beneficio2</option>
+									</select>
+									<label for="cant-number">Ver</label>
+									<select name="cant-number" id="cant-number">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</div>
+
+							</div>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
+								</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
+								</div>
+							</article>
+							<div class="foot-pagination">
+								<a href="#" class="prev"><span><<</span> Anterior</a>
+								<ul class="pag">
+									<li><a href="#" class="page-link">1</a></li>
+									<li><a href="#" class="page-link current-page">2</a></li>
+									<li><a href="#" class="page-link">3</a></li>
+									<li><a href="#" class="page-link">4</a></li>
+									<li><a href="#" class="page-link">5</a></li>
+									<li><a href="#" class="page-link">6</a></li>
 								</ul>
-							</div>
-							<ul class="slider-nav">
-							  <li><a href="#" data-orbit-link="headline-1">2x1 en Cinemark</a></li>
-							  <li><a href="#" data-orbit-link="headline-2">Registre su email y gane un LED 42"</a></li>
-							  <li><a href="#" data-orbit-link="headline-3">D&eacute;bito Express te lleva de compras</a></li>
-							</ul>
-							<div class="promo-h3">
-								<h3 class="promo">2x1 en Cinemark es un beneficio para disfrutar todos los d&iacute;as y con quien quiera.</h3>
-								<h3 class="promo hide">Registre su email y participe del Sorteo por 3 Smart TV 3D</h3>
-								<h3 class="promo hide">Con D&eacute;bito Express participe en el sorteo de &oacute;rdenes de compra en Disco, Jumbo, Easy, Vea y Blaisten</h3>
+								<a href="#" class="next">Siguiente <span>>></span></a>
 							</div>
 
 						</div>
-							
+
 					</div>
 				</section>
 
@@ -513,7 +759,7 @@
 				<nav role="navigation" id="sideMenu">
 					<ul class="nav-bar" id="sideMainNav">
 						<li><a href="viajes.html">VIAJES</a></li>
-						<li><a href="categoria.html">GASTRONOMÍA</a></li>
+						<li><a class="current" href="categoria.html">GASTRONOMÍA</a></li>
 						<li><a href="#">COMPRAS</a></li>
 						<li><a href="#">ENTRETENIMIENTOS</a></li>
 						<li><a href="#">ÚNICOS</a></li>
@@ -532,7 +778,7 @@
 		
 		<script src="assets/javascripts/site.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
