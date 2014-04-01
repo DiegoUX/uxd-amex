@@ -24,7 +24,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="">
+	<body class="sidebar-page category">
 		<section role="main"><!-- We need this box for the menu - mobile  -->
 			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
 			<div class="main-wrapper">
@@ -123,7 +123,7 @@
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
 									<ul>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -134,7 +134,7 @@
 												<span for="cards-check">Centurion from<br> American Express</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -156,7 +156,7 @@
 												<span for="cards-check">The Gold Card</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -170,7 +170,7 @@
 
 									</ul>
 									<ul>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>	
@@ -203,7 +203,7 @@
 												<span for="cards-check">The Gold Credit Card</span>
 											</div>
 										</li>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>
@@ -369,12 +369,10 @@
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field">
-								<!-- <input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up"> -->
 								<a href="#" class="search-icon"></a>
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field">
-								<!-- <input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up"> -->
 								<a href="#" class="dir-icon"></a>
 							</div>
 						</div>
@@ -385,160 +383,44 @@
 				<!-- <div id="content" class="container" ng-view></div> -->
 				<!-- MIDDLE SECTION -->
 				<section id="content" class="container" ng-view>
-					<div class="row page-content legal-pages">
-						<div class="small-12 large-10 push-1 columns">
-							<h2>
-								MARCAS REGISTRADAS
-							</h2>
-							<h3 class="h3-title">Las siguientes son las marcas registradas y marcas de servicio de American Express Company, subsidiarias y filiales, que pueden aparecer el los distintos sitios de American Express.</h3>
-							<ul class="marcas">
-								<li>AMERICAN EXPRESS</li>
-								<li>AMERICAN EXPRESS Box Logo</li>
-								<li>AMERICAN EXPRESS Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE EXECUTIVE Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE PURCHASING Card Design</li>
-								<li>AMERICAN EXPRESS GOVERNMENT Card Design</li>
-								<li>AMERICAN EXPRESS SENIOR Card Design</li>
-								<li>AMERICAN EXPRESS Travelers Cheque Design</li>
-								<li>AMERICAN EXPRESS Travelers Cheque for Two Design</li>
-								<li>AMERICAN EXPRESS WORLD SERVICE &amp; Design</li>
-								<li>AMEX</li>
-								<li>CORPORATELINK</li>
-								<li>DATAMEX</li>
-								<li>do more</li>
-								<li>DO YOU KNOW ME?</li>
-								<li>DON'T LEAVE HOME WITHOUT IT</li>
-								<li>DON'T LEAVE HOME WITHOUT THEM</li>
-								<li>DON'T LEAVE HOME WITHOUT US</li>
-								<li>EMPRESS</li>
-								<li>EXPRESSNET</li>
-								<li>FOOD &amp; WINE</li>
-								<li>Gladiator Head</li>
-								<li>GLOBAL ASSIST HOTLINE</li>
-								<li>Gold Card Design</li>
-								<li>IDS</li>
-								<li>MEMBERSHIP REWARDS</li>
-								<li>OPTIMA</li>
-								<li>OPTIMA Card Design</li>
-								<li>OPTIMA TRUE GRACE</li>
-								<li>OPTIMA TRUE GRACE Card Design</li>
-								<li>PHONE FUNDS</li>
-								<li>PLATINUM CARD</li>
-								<li>PLATINUM Card Design</li>
-								<li>PRIVILIGED ASSETS</li>
-								<li>SIGN &amp; TRAVEL</li>
-								<li>SKY GUIDE</li>
-								<li>SMARTDATA</li>
-								<li>SMARTPARTNERS</li>
-								<li>SMARTSOURCE</li>
-								<li>SMARTSTART</li>
-								<li>TRAVEL &amp; LEISURE</li>
-								<li>TRAVEL IMPRESSIONS</li>
-								<li>TRUE GRACE</li>
-								<li>TRUE GRACE Card Design</li>
-								<li>Wall Street Wise. Main Street Smart.</li>
-								<li>YOUR COMPANY</li>
-							</ul>
-							<h3 class="h3-title">Las siguientes son las marcas no registradas de American Express Company, subsidiarias y filiales, que pueden aparecer en los distintos de American Express.</h3>
-							<ul class="marcas"> 	
-								<li>CENTURION</li>
-								<li>CHEQUES FOR TWO</li>
-								<li>DON'T LEAVE HOME PAGES WITHOUT IT</li>
-								<li>MEMBERSHIP B@NKING</li>
-								<li>REWARDS MANAGER</li>
-							</ul>
-							<h3 class="h3-title">Las siguientes son las marcas registradas y marcas de servicio de American Express Argentina S.A., subsidiarias y filiales que pueden aparecer en el contenido de este Sitio.</h3>
-							<ul class="marcas">
-							      <li>AMERCIAN EXPRESS WORLD SERVICE &amp; DESIGN</li>
-							      <li>AMERICAN EXPRESS</li>
-							      <li>AMERICAN EXPRESS BOX LOGO FINANCIAL</li>
-							      <li>AMERICAN EXPRESS CARD DESIGN</li>
-							      <li>AMERICAN EXPRESS CORPORATE CARD DESIGN</li>
-							      <li>AMERICAN EXPRESS OPTIMA</li>
-							      <li>AMERICAN EXPRESS OPTIMA CARD DESIGN</li>
-							      <li>AMEX</li>
-							      <li>AM-EX EXPRESS RESERVATIONS</li>
-							      <li>ASSOCIATE CLUBS</li>
-							      <li>CENTURION</li>
-							      <li>EL PRIVILEGIO DE SER UN SOCIO A/E</li>
-							      <li>EL PRIVILEGIO DE SER UN SOCIO AMERICAN EXPRESS</li>
-							      <li>EXEC ASSIST</li>
-							      <li>EXPRESSIONS</li>
-							      <li>GLADIATOR HEAD</li>
-							      <li>LOS PRVLGS DE SER UN SOCIO A/E</li>
-							      <li>MEMBERSHIP HAS ITS PRIVILEGES</li>
-							      <li>OPTIMA</li>
-							      <li>PERTENECER</li>
-							      <li>PERTENECER TIENE SUS PRIVILEGIOS</li>
-							      <li>PLATINUM CARD</li>
-							      <li>SER UN SOCIO AMERICAN EXPRESS TIENE SUS PRIVILEGIOS</li>
-							      <li>SIGN &amp; FLY</li>
-							      <li>SIGN &amp; TRAVEL</li>
-							      <li>SOLLO</li>
-							      <li>STRIPES DES</li>
-							      <li>TARJETA DE PLATINO</li>
-							      <li>TRUE GRACE</li>
-							      <li>UD PUEDE TENER LO MEJOR</li>
-							      <li>UN SOCIO A/E TIENE LO MEJOR</li>
-							      <li>UN SOCIO AMERICAN EXPRESS TIENE LO MEJOR</li>
-							      <li>WINE SOCIETY</li>
-							</ul>
+					<div class="row page-content legal-pages sections">
 
-							<h3 class="h3-title">Las siguientes son denominaciones no registradas de productos y servicios de American Express Argentina S.A., para utilizar en la Argentina, que pueden aparecer en el contenido de este Sitio.</h3>
-							<ul class="marcas">
-							      <li>A/E BX LOG</li>
-							      <li>ASSISTANCE EXPRESS</li>
-							      <li>AUTOMATIC FLIGHT INSURANCE</li>
-							      <li>CALL EXPRESS</li>
-							      <li>CANCER PROTECTION PLAN</li>
-							      <li>CARD PROTECTION</li>
-							      <li>CENTRO DE ATENCIÓN TELEFÓNICA</li>
-							      <li>CONCIERGE PLATINUM CARD</li>
-							      <li>CORPORATE ASSISTANCE</li>
-							      <li>CORPORATE LOYALTY</li>
-							      <li>DÉBITO EXPRESS</li>
-							      <li>ESTADO DE CUENTA</li>
-							      <li>EXPRESS CASH</li>
-							      <li>EXPRESS PLAN</li>
-							      <li>FINE DINING</li>
-							      <li>FINE HOTELS &amp; RESORTS</li>
-							      <li>GOLD CARD EVENTS</li>
-							      <li>GOLD CARD EXCLUSIVES</li>
-							      <li>HOME PROTECTION</li>
-							      <li>INTERNATIONAL AIRLINE PROGRAM</li>
-							      <li>LA TARJETA</li>
-							      <li>LINEA EXPRESS</li>
-							      <li>MEDICAL AID</li>
-							      <li>MEDICAL EXPRESS</li>
-							      <li>MEMBERSHIP REWARDS</li>
-							      <li>OFICINAS DE SERVICIOS DE VIAJE</li>
-							      <li>PLAN DE CUOTAS </li>
-							      <li>PLAN DE PAGO PREFERENCIAL</li>
-							      <li>PLAN DE PROTECCIÓN DE SALDOS</li>
-							      <li>PLAN RENTA POR INTERNACIÓN</li>
-							      <li>PLATINUM AGENDA</li>
-							      <li>PLATINUM ASSISTANCE</li>
-							      <li>PLATINUM SERVICE CENTER</li>
-							      <li>PLATINUM TRAVEL SERVICE</li>
-							      <li>PROGRAMA PREMIUM DE CERTIFICACIÓN A ESTABLECIMIENTOS.</li>
-							      <li>REEMPLAZO DE EMERGENCIA</li>
-							      <li>ROAD ASSISTANCE</li>
-							      <li>SEGURO AUTOMÁTICO DE VIAJES</li>
-							      <li>SERVICIO DE COMPRA PROTEGIDA</li>
-							      <li>SIN LÍMITE PREESTABLECIDO DE GASTOS</li>
-							      <li>SISTEMA GERENCIAL DE REPORTES</li>
-							      <li>TARJETAS ADICIONALES</li>
-							      <li>THE GOLD CARD</li>
-							      <li>UNIDAD DE ACEPTACIÓN DE TARJETAS</li>
-							      <li>UNIVERSAL LIFE</li>
-							      <li>UNIVERSAL LIFE COLLEGE</li>
-							      <li>VIP PROTECTOR</li>
-							</ul>
-							
+						<div class="small-12 large-3 columns sidebar-column">
+
+							<h2>SECCIONES</h2>
+
+							<section class="checks-section">
+								<h3><a href="security.html">Preguntas y Respuestas sobre Seguridad</a></h3>
+								
+								<h3><a href="cookies.html">Acerca de Cookies</a></h3>
+
+								<h3><a href="pyc.html">Principios de Privacidad y Confidencialidad</a></h3>
+
+								<h3><a href="http://www.americanexpress.com/preferences?country=argentina">Preferencias de Correo Electrónico</a></h3>
+							</section>
+
 						</div>
-						
-							
+
+						<div class="small-12 large-9 columns main-column">
+							<h2>Acerca de Cookies:</h2>
+
+							<p class="little-par">Las cookies fueron originalmente diseñadas para facilitar que el website distinga el navegador del usuario como visitante anterior y de ese modo guardar y recordar las preferencias que pueden haber sido establecidas mientras el usuario navegaba en el sitio. Una cookie es una pequeña banda de texto que el website puede enviar a su navegador. <b>Una cookie no puede capturar ninguna otra información de su disco duro, transmitir virus a su computadora o capturar su dirección de correo electrónico.</b> Actualmente los websites utilizan cookies para optimizar la visita del usuario; por lo general, las cookies pueden almacenar sin riesgos la identificación (ID) y la contraseña del usuario, personalizar las páginas de inicio, identificar qué sectores del sitio fueron visitados o mantener un registro de sus preferencias. </p>
+							<p class="little-par">Si usted está navegando en americanexpress.com/argentina, una cookie sólo identifica a su navegador. Si usted es un usuario registrado en algún sitio de American Express (con un ID y contraseña de usuario asignada), utilizaremos cookies para poder brindarle información personalizada que creemos será valiosa para usted en base a las preferencias que indicó mientras visitaba el sitio, otra información que tengamos de usted como cliente de American Express, así como información disponible de fuentes externas.  Es posible que pueda instalar su navegador para que le informe cuando se coloque una cookie; de este modo usted tiene la oportunidad de decidir si acepta o no la cookie. Si usted está navegando en nuestro sitio y no es un usuario registrado, usted no tiene que aceptar una cookie para poder continuar utilizando el sitio. Sin embargo, si usted está visitando un sitio donde accede a información de su cuenta personal (como por ejemplo verificar su Estado de Cuenta, usted debe aceptar las cookies de ese sitio ya que son esenciales para la administración y seguridad del sitio. Al aceptar una cookie tenga en cuenta que su derecho de rechazar promociones vía correo electrónico no se ve afectado. A continuación se establecen las reglas de como instalar o predeterminar sus preferencias de cookies:</p>
+							<p class="little-par"><b>Netscape Navigator 4:</b>Seleccionar “Preferencias” del menú “Edición”. Del menú “Preferencias”, seleccione “Avanzadas” y se enumerarán en la parte inferior derecha del menú “Opciones para cookies”. Además puede seleccionar “Ayuda” para más detalles. Para mayor información acerca del navegador Netscape y el uso de cookies, visite el website Netscape.</p>
+							<p class="little-par"><b>Microsoft Internet Explorer 4:</b>Seleccionar “Opciones” del menú “Ver”. Elegir el menú “Avanzadas” y desplazarse a la sección denominada “Cookies”, donde se enumeran diversas opciones. Para mayor información acerca del navegador Microsoft Internet Explorer y el uso de Cookies, visite el website de Microsoft.</p>
+							<p class="little-par"><b>AOL:</b>Si usted está utilizando AOL v3.0 para Windows 95: Seleccione “Preferencias” del menú “Miembros”. Haga click en el ícono “WWW” y seleccione “Avanzadas”. Modifique su preferencia si desea que se le avise antes de aceptar cookies.</p>
+							<p class="little-par">Si usted utiliza algunos de los siguientes navegadores AOL, no podrá predeterminar preferencias de cookies dado que estos navegadores/exploradores aceptan cookies automáticamente:</p>
+							<ul class="second-lvl cookies-list">
+								<li>AOL v3.0 para Windows 3.0,
+	                          utilizando el navegador de AOL, o la versión AOL v3.0
+	                          para Microsoft Internet Explorer.</li>
+								<li>AOL para MAC, utilizando la versión AOL 2.1 para Microsoft Internet Explorer.</li>
+							</ul>
+							<p class="little-par">Todas las demás versiones anteriores de los navegadores AOL no trabajan con cookies y por lo tanto no pueden identificarlo a usted como usuario registrado en los websites de American Express que transmiten o reciben información de su cuenta personal.</p>
+							<p class="little-par">Volver a <a target="_blank" href="/argentina/legal/privacy_statement.shtml">Declaración de Privacidad en Internet para los Clientes de American Express</a></p>
+						</div>
+
+
 					</div>
 				</section>
 
@@ -591,7 +473,7 @@
 				<nav role="navigation" id="sideMenu">
 					<ul class="nav-bar" id="sideMainNav">
 						<li><a href="viajes.html">VIAJES</a></li>
-						<li><a href="categoria.html">GASTRONOMÍA</a></li>
+						<li><a class="current" href="categoria.html">GASTRONOMÍA</a></li>
 						<li><a href="#">COMPRAS</a></li>
 						<li><a href="#">ENTRETENIMIENTOS</a></li>
 						<li><a href="#">ÚNICOS</a></li>
@@ -610,7 +492,7 @@
 		
 		<script src="assets/javascripts/site.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

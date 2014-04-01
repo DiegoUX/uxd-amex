@@ -24,7 +24,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="">
+	<body class="sidebar-page category">
 		<section role="main"><!-- We need this box for the menu - mobile  -->
 			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
 			<div class="main-wrapper">
@@ -123,7 +123,7 @@
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
 									<ul>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -134,7 +134,7 @@
 												<span for="cards-check">Centurion from<br> American Express</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -156,7 +156,7 @@
 												<span for="cards-check">The Gold Card</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -170,7 +170,7 @@
 
 									</ul>
 									<ul>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>	
@@ -203,7 +203,7 @@
 												<span for="cards-check">The Gold Credit Card</span>
 											</div>
 										</li>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>
@@ -369,12 +369,10 @@
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field">
-								<!-- <input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up"> -->
 								<a href="#" class="search-icon"></a>
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field">
-								<!-- <input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up"> -->
 								<a href="#" class="dir-icon"></a>
 							</div>
 						</div>
@@ -385,160 +383,69 @@
 				<!-- <div id="content" class="container" ng-view></div> -->
 				<!-- MIDDLE SECTION -->
 				<section id="content" class="container" ng-view>
-					<div class="row page-content legal-pages">
-						<div class="small-12 large-10 push-1 columns">
-							<h2>
-								MARCAS REGISTRADAS
-							</h2>
-							<h3 class="h3-title">Las siguientes son las marcas registradas y marcas de servicio de American Express Company, subsidiarias y filiales, que pueden aparecer el los distintos sitios de American Express.</h3>
-							<ul class="marcas">
-								<li>AMERICAN EXPRESS</li>
-								<li>AMERICAN EXPRESS Box Logo</li>
-								<li>AMERICAN EXPRESS Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE EXECUTIVE Card Design</li>
-								<li>AMERICAN EXPRESS CORPORATE PURCHASING Card Design</li>
-								<li>AMERICAN EXPRESS GOVERNMENT Card Design</li>
-								<li>AMERICAN EXPRESS SENIOR Card Design</li>
-								<li>AMERICAN EXPRESS Travelers Cheque Design</li>
-								<li>AMERICAN EXPRESS Travelers Cheque for Two Design</li>
-								<li>AMERICAN EXPRESS WORLD SERVICE &amp; Design</li>
-								<li>AMEX</li>
-								<li>CORPORATELINK</li>
-								<li>DATAMEX</li>
-								<li>do more</li>
-								<li>DO YOU KNOW ME?</li>
-								<li>DON'T LEAVE HOME WITHOUT IT</li>
-								<li>DON'T LEAVE HOME WITHOUT THEM</li>
-								<li>DON'T LEAVE HOME WITHOUT US</li>
-								<li>EMPRESS</li>
-								<li>EXPRESSNET</li>
-								<li>FOOD &amp; WINE</li>
-								<li>Gladiator Head</li>
-								<li>GLOBAL ASSIST HOTLINE</li>
-								<li>Gold Card Design</li>
-								<li>IDS</li>
-								<li>MEMBERSHIP REWARDS</li>
-								<li>OPTIMA</li>
-								<li>OPTIMA Card Design</li>
-								<li>OPTIMA TRUE GRACE</li>
-								<li>OPTIMA TRUE GRACE Card Design</li>
-								<li>PHONE FUNDS</li>
-								<li>PLATINUM CARD</li>
-								<li>PLATINUM Card Design</li>
-								<li>PRIVILIGED ASSETS</li>
-								<li>SIGN &amp; TRAVEL</li>
-								<li>SKY GUIDE</li>
-								<li>SMARTDATA</li>
-								<li>SMARTPARTNERS</li>
-								<li>SMARTSOURCE</li>
-								<li>SMARTSTART</li>
-								<li>TRAVEL &amp; LEISURE</li>
-								<li>TRAVEL IMPRESSIONS</li>
-								<li>TRUE GRACE</li>
-								<li>TRUE GRACE Card Design</li>
-								<li>Wall Street Wise. Main Street Smart.</li>
-								<li>YOUR COMPANY</li>
-							</ul>
-							<h3 class="h3-title">Las siguientes son las marcas no registradas de American Express Company, subsidiarias y filiales, que pueden aparecer en los distintos de American Express.</h3>
-							<ul class="marcas"> 	
-								<li>CENTURION</li>
-								<li>CHEQUES FOR TWO</li>
-								<li>DON'T LEAVE HOME PAGES WITHOUT IT</li>
-								<li>MEMBERSHIP B@NKING</li>
-								<li>REWARDS MANAGER</li>
-							</ul>
-							<h3 class="h3-title">Las siguientes son las marcas registradas y marcas de servicio de American Express Argentina S.A., subsidiarias y filiales que pueden aparecer en el contenido de este Sitio.</h3>
-							<ul class="marcas">
-							      <li>AMERCIAN EXPRESS WORLD SERVICE &amp; DESIGN</li>
-							      <li>AMERICAN EXPRESS</li>
-							      <li>AMERICAN EXPRESS BOX LOGO FINANCIAL</li>
-							      <li>AMERICAN EXPRESS CARD DESIGN</li>
-							      <li>AMERICAN EXPRESS CORPORATE CARD DESIGN</li>
-							      <li>AMERICAN EXPRESS OPTIMA</li>
-							      <li>AMERICAN EXPRESS OPTIMA CARD DESIGN</li>
-							      <li>AMEX</li>
-							      <li>AM-EX EXPRESS RESERVATIONS</li>
-							      <li>ASSOCIATE CLUBS</li>
-							      <li>CENTURION</li>
-							      <li>EL PRIVILEGIO DE SER UN SOCIO A/E</li>
-							      <li>EL PRIVILEGIO DE SER UN SOCIO AMERICAN EXPRESS</li>
-							      <li>EXEC ASSIST</li>
-							      <li>EXPRESSIONS</li>
-							      <li>GLADIATOR HEAD</li>
-							      <li>LOS PRVLGS DE SER UN SOCIO A/E</li>
-							      <li>MEMBERSHIP HAS ITS PRIVILEGES</li>
-							      <li>OPTIMA</li>
-							      <li>PERTENECER</li>
-							      <li>PERTENECER TIENE SUS PRIVILEGIOS</li>
-							      <li>PLATINUM CARD</li>
-							      <li>SER UN SOCIO AMERICAN EXPRESS TIENE SUS PRIVILEGIOS</li>
-							      <li>SIGN &amp; FLY</li>
-							      <li>SIGN &amp; TRAVEL</li>
-							      <li>SOLLO</li>
-							      <li>STRIPES DES</li>
-							      <li>TARJETA DE PLATINO</li>
-							      <li>TRUE GRACE</li>
-							      <li>UD PUEDE TENER LO MEJOR</li>
-							      <li>UN SOCIO A/E TIENE LO MEJOR</li>
-							      <li>UN SOCIO AMERICAN EXPRESS TIENE LO MEJOR</li>
-							      <li>WINE SOCIETY</li>
-							</ul>
+					<div class="row page-content legal-pages sections">
 
-							<h3 class="h3-title">Las siguientes son denominaciones no registradas de productos y servicios de American Express Argentina S.A., para utilizar en la Argentina, que pueden aparecer en el contenido de este Sitio.</h3>
-							<ul class="marcas">
-							      <li>A/E BX LOG</li>
-							      <li>ASSISTANCE EXPRESS</li>
-							      <li>AUTOMATIC FLIGHT INSURANCE</li>
-							      <li>CALL EXPRESS</li>
-							      <li>CANCER PROTECTION PLAN</li>
-							      <li>CARD PROTECTION</li>
-							      <li>CENTRO DE ATENCIÓN TELEFÓNICA</li>
-							      <li>CONCIERGE PLATINUM CARD</li>
-							      <li>CORPORATE ASSISTANCE</li>
-							      <li>CORPORATE LOYALTY</li>
-							      <li>DÉBITO EXPRESS</li>
-							      <li>ESTADO DE CUENTA</li>
-							      <li>EXPRESS CASH</li>
-							      <li>EXPRESS PLAN</li>
-							      <li>FINE DINING</li>
-							      <li>FINE HOTELS &amp; RESORTS</li>
-							      <li>GOLD CARD EVENTS</li>
-							      <li>GOLD CARD EXCLUSIVES</li>
-							      <li>HOME PROTECTION</li>
-							      <li>INTERNATIONAL AIRLINE PROGRAM</li>
-							      <li>LA TARJETA</li>
-							      <li>LINEA EXPRESS</li>
-							      <li>MEDICAL AID</li>
-							      <li>MEDICAL EXPRESS</li>
-							      <li>MEMBERSHIP REWARDS</li>
-							      <li>OFICINAS DE SERVICIOS DE VIAJE</li>
-							      <li>PLAN DE CUOTAS </li>
-							      <li>PLAN DE PAGO PREFERENCIAL</li>
-							      <li>PLAN DE PROTECCIÓN DE SALDOS</li>
-							      <li>PLAN RENTA POR INTERNACIÓN</li>
-							      <li>PLATINUM AGENDA</li>
-							      <li>PLATINUM ASSISTANCE</li>
-							      <li>PLATINUM SERVICE CENTER</li>
-							      <li>PLATINUM TRAVEL SERVICE</li>
-							      <li>PROGRAMA PREMIUM DE CERTIFICACIÓN A ESTABLECIMIENTOS.</li>
-							      <li>REEMPLAZO DE EMERGENCIA</li>
-							      <li>ROAD ASSISTANCE</li>
-							      <li>SEGURO AUTOMÁTICO DE VIAJES</li>
-							      <li>SERVICIO DE COMPRA PROTEGIDA</li>
-							      <li>SIN LÍMITE PREESTABLECIDO DE GASTOS</li>
-							      <li>SISTEMA GERENCIAL DE REPORTES</li>
-							      <li>TARJETAS ADICIONALES</li>
-							      <li>THE GOLD CARD</li>
-							      <li>UNIDAD DE ACEPTACIÓN DE TARJETAS</li>
-							      <li>UNIVERSAL LIFE</li>
-							      <li>UNIVERSAL LIFE COLLEGE</li>
-							      <li>VIP PROTECTOR</li>
-							</ul>
-							
+						<div class="small-12 large-3 columns sidebar-column">
+
+							<h2>SECCIONES</h2>
+
+							<section class="checks-section">
+								<h3><a href="security.html">Preguntas y Respuestas sobre Seguridad</a></h3>
+								
+								<h3><a href="cookies.html">Acerca de Cookies</a></h3>
+
+								<h3><a href="pyc.html">Principios de Privacidad y Confidencialidad</a></h3>
+
+								<h3><a href="http://www.americanexpress.com/preferences?country=argentina">Preferencias de Correo Electrónico</a></h3>
+							</section>
+
 						</div>
-						
-							
+
+						<div class="small-12 large-9 columns main-column">
+							<h2>Seguridad: Preguntas & Respuestas</h2>
+
+							<p>American Express sabe que la seguridad es muy importante para usted, por tal motivo hemos tomado una serie de medidas que contribuyen a mejorar la seguridad y confidencialidad de las transmisiones de información privada enviada desde American Express a través de Internet.</p>
+							<h4 class="h4-title">P: ¿Mi información confidencial está protegida?</h4>
+							<p class="second-lvl">R: Cada vez que American Express le solicita que envíe información confidencial a través de Internet, incluyendo información de su cuenta personal, requerimos que primero se establezca una “sesión segura” mediante la tecnología SSL.</p>
+							<h4 class="h4-title">P: ¿Qué es una “sesión segura” y de qué modo facilita la protección de mi información?</h4>
+							<p class="second-lvl">R: Durante una sesión segura SSL, la información que se transmite entre su computadora y los sistemas de American Express está protegida por medio de criptografía específica. Su computadora intercambia información esencial con las computadoras de American Express para poder crear una conversación privada que sólo su computadora y los sistemas de American Express pueden entender.</p>
+							<h4 class="h4-title">P: ¿Qué es específicamente el SSL?</h4>
+							<p class="second-lvl">R: Cada vez que usted accede o proporciona información de su cuenta en alguna de nuestras áreas online seguras, dicha información es encriptada mediante una tecnología denominada “Secure Sockets Layer”, comúnmente abreviada como SSL. La tecnología SSL codifica de un modo secreto la información a medida que ésta se transmite a través de Internet entre su computadora y los sistemas de American Express, contribuyendo a la confidencialidad de la información. Para utilizar SSL se requieren dos componentes: un navegador SSL compatible y un servidor de red para llevar a cabo el “intercambio clave” que establece una conexión SSL para los sistemas servidores de red de American Express.</p>
+							<h4 class="h4-title">P: ¿Qué tipo de navegador necesito?</h4>
+							<p class="second-lvl">R: Para poder contar con la beneficiosa tecnología SSL, necesitará un navegador con capacidades SSL. Dentro de los navegadores SSL se incluyen Netscape 2.0, Internet Explorer 2.0 de Microsoft, y el navegador de America Online versión 3.0 para Windows (tenga en cuenta que algunas versiones anteriores de los navegadores mencionados no son SSL compatibles). Si todavía no cuenta con un navegador SSL compatible, puede bajar un navegador SSL de alguno de los siguientes vínculos:</p>
+							<ul class="second-lvl with-links">
+								<li><a target="_blank" href="http://home.netscape.com/comprod/mirror/client_download.html">Netscape Navigator</a></li>
+								<li><a target="_blank" href="http://www.microsoft.com/windows/ie/download/all.htm?bShowPage">Microsot Internet Explorer</a></li>
+							</ul>
+							<h4 class="h4-title">P: ¿Qué tipo de conexión necesito?</h4>
+							<p class="second-lvl">R: Casi todos los Proveedores de Servicio de Internet (ISPs) permiten llevar a cabo la sesión SSL anteriormente descrita, de igual modo que los servicios online tales como America Online, Compuserve, Prodigy Terra e IG. Si usted utiliza la conexión interna de su compañía para acceder a Internet y no puede acceder a las páginas protegidas de American Express con alguno de los navegadores SSL anteriormente detallados, es probable que su compañía esté bloqueando el acceso a través de un “firewall”. Por favor comuníquese con el administrador de sistemas de acceso a Internet de su empresa para obtener más detalles acerca de su acceso a Internet. </p>
+							<h4 class="h4-title">P: ¿Cuándo ingreso en una “sesión segura SSL”?</h4>
+							<p class="second-lvl">R: Las sesiones seguras SSL se establecen en las áreas de Servicios Online American Express, donde se transmite su información personal, incluyendo: </p>
+							<ul class="second-lvl">
+								<li>Acceso Online a su Estado de Cuenta</li>
+								<li>Verifique sus Puntos</li>
+								<li>Inscripción y consultas a Servicios Online American Express</li>
+								<li>Solicitudes de La Tarjeta</li>
+							</ul>
+							<h4 class="h4-title">P: ¿Por qué necesito un ID y una contraseña?</h4>
+							<p class="second-lvl">R: Muchas áreas requieren la utilización de un ID y una contraseña como medida de seguridad adicional que contribuye con la protección de su información confidencial. Esto le permite a American Express verificar con exactitud quién es usted, y por lo tanto le facilita el acceso a la información de su cuenta, y ayuda a prevenir el acceso no autorizado. </p>
+							<h4 class="h4-title">P: ¿Qué debo hacer cuando finalizo el acceso a información confidencial?</h4>
+							<p class="second-lvl">R: Cuando termina de utilizar un área segura de Servicios Online American Express (ej. Acceso Online a su Estado de Cuenta), siempre asegúrese de hacer click en el vínculo de color rojo “Salir de la Zona Segura” que aparece a la izquierda de la pantalla en toda página segura. Cuando hace click en éste, se le dará la opción de finalizar con su sesión segura. No se pueden llevar a cabo transacciones seguras sin antes volver a ingresar su ID y contraseña. </p>
+							<h4 class="h4-title">P: ¿ Por qué puedo visualizar parte de la información de mi cuenta aún después de haber hecho click en el vínculo “Salir de la Zona Segura” ?</h4>
+							<p class="second-lvl">R: El software del navegador generalmente “oculta” páginas mientras usted las mira, lo cual implica que algunas de las páginas se guarden en la memoria temporal de su computadora. Por lo tanto, es probable que al hacer click en el botón atrás del navegador, le muestre una versión guardada de una página anteriormente visitada. Por favor tenga en cuenta que dicho ocultamiento no afecta de ningún modo la seguridad de su ID y contraseña confidencial. Si utiliza su computadora en un lugar público, por favor lea “¿Qué debo hacer si estoy utilizando una computadora “pública”?”.</p>
+							<h4 class="h4-title">P: ¿Qué debo hacer si estoy utilizando una computadora “pública”?</h4>
+							<p class="second-lvl">R: Si utiliza una computadora con la cual trabajan otras personas y teme que puedan ver las páginas “ocultas” que usted visitó luego de haber finalizado su tarea, entonces salga del navegador antes de retirarse. Esto disminuirá la posibilidad de que alguien vea información confidencial. Ningún otro usuario podrá acceder online a la información de su cuenta sin su ID y contraseña.</p>
+							<div class="ta-right"><a href="#top">[Regresar al inicio]</a></div>
+							<h4 class="h4-title">P: ¿ Qué son las cookies? ¿Es necesario aceptarlas?</h4>
+							<p class="second-lvl">R: Una cookie es un archivo de texto que está en su computadora y que le recuerda a nuestro sistema sus preferencias particulares del navegador y los requerimientos de seguridad, y le permite a American Express saber exactamente quién es usted. Si su navegador le avisa cuando una cookie está “servida”, debe aceptarla o el acceso a información confidencial será denegado, dado que no podremos asegurar que la información se envía a las partes correspondientes. Dado que las cookies son específicas del sitio, sólo los Servicios Online American Express pueden accesar, decodificar y hacer uso de la información.</p>
+							<h4 class="h4-title">P: Luego de ingresar mi ID y contraseña y luego de hacer click en enviar, en lugar de ver la información de mi cuenta, sólo visualizo la misma página una y otra vez. ¿Por qué ocurre esto?</h4>
+							<p class="second-lvl">R: Es muy probable que esté utilizando el software de un navegador Netscape, versión 4.0 o posterior, con la opción “inhabilitar cookies” activada. Usted debe efectuar los siguientes cambios: haga click en “Edición”, luego seleccione “Preferencias” y por último elija “Avanzadas” (no el signo más que está al lado de “Avanzadas”). Finalmente, puede elegir “Aceptar sólo cookies que vuelvan al servidor originario” o “Avisar antes de aceptar una cookie” y hacer click en “OK”. Este cambio nos permitirá confirmar su identidad y enviar información confidencial de su cuenta. </p>
+							<h4 class="h4-title">P: Cuando trato de acceder a la información de mi cuenta [o a la información de Membership Rewards o al Registro para Servicios Online American Express] me envían constantemente a una página que habla acerca de los navegadores y la seguridad. ¿Por qué ocurre esto?</h4>
+							<p class="second-lvl">R: American Express cree firmemente en la responsabilidad que tiene de proteger su información confidencial de la mejor manera posible. Para acceder de un modo seguro a la información de su cuenta [o a la información de Membership Rewards o al Registro para Servicios Online American Express] a través de Internet, le recomendamos que utilice las últimas versiones disponibles de navegadores. El acceso con las versiones anteriores a 1.12 (Mac o Unix) o 1.22 (Windows) de Netscape está prohibido debido a normas de seguridad. </p>
+							<div class="ta-right"><a href="#top">[Regresar al inicio]</a></div>
+						</div>
+
+
 					</div>
 				</section>
 
@@ -591,7 +498,7 @@
 				<nav role="navigation" id="sideMenu">
 					<ul class="nav-bar" id="sideMainNav">
 						<li><a href="viajes.html">VIAJES</a></li>
-						<li><a href="categoria.html">GASTRONOMÍA</a></li>
+						<li><a class="current" href="categoria.html">GASTRONOMÍA</a></li>
 						<li><a href="#">COMPRAS</a></li>
 						<li><a href="#">ENTRETENIMIENTOS</a></li>
 						<li><a href="#">ÚNICOS</a></li>
@@ -610,7 +517,7 @@
 		
 		<script src="assets/javascripts/site.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -24,7 +24,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="">
+	<body class="sidebar-page category">
 		<section role="main"><!-- We need this box for the menu - mobile  -->
 			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
 			<div class="main-wrapper">
@@ -123,7 +123,7 @@
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
 								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
 									<ul>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -134,7 +134,7 @@
 												<span for="cards-check">Centurion from<br> American Express</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -156,7 +156,7 @@
 												<span for="cards-check">The Gold Card</span>
 											</div>
 										</li>
-										<li class="buy-card on-check">
+										<li class="buy-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -170,7 +170,7 @@
 
 									</ul>
 									<ul>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>	
@@ -203,7 +203,7 @@
 												<span for="cards-check">The Gold Credit Card</span>
 											</div>
 										</li>
-										<li class="credit-card on-check">
+										<li class="credit-card">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check2" class="check-field">
 											</div>
@@ -369,12 +369,10 @@
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field">
-								<!-- <input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up"> -->
 								<a href="#" class="search-icon"></a>
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field">
-								<!-- <input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up"> -->
 								<a href="#" class="dir-icon"></a>
 							</div>
 						</div>
@@ -385,82 +383,57 @@
 				<!-- <div id="content" class="container" ng-view></div> -->
 				<!-- MIDDLE SECTION -->
 				<section id="content" class="container" ng-view>
-					<div class="row page-content">
-						<div class="small-12 large-6 columns left">
-							<h2 class="news">
-								NOVEDADES
-							</h2>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
-							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Creciendo</a></h3>
-									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
-								</div>
-							</article>
+					<div class="row page-content legal-pages sections">
+
+						<div class="small-12 large-3 columns sidebar-column">
+
+							<h2>SECCIONES</h2>
+
+							<section class="checks-section">
+								<h3><a href="security.html">Preguntas y Respuestas sobre Seguridad</a></h3>
+								
+								<h3><a href="cookies.html">Acerca de Cookies</a></h3>
+
+								<h3><a href="pyc.html">Principios de Privacidad y Confidencialidad</a></h3>
+
+								<h3><a href="http://www.americanexpress.com/preferences?country=argentina">Preferencias de Correo Electrónico</a></h3>
+							</section>
 
 						</div>
-						<div class="small-12 large-6 columns no-padding-left-large">
-							<h2 class="destacados">DESTACADOS</h2>
-							<div class="orbit-test-wrap">
-								<ul data-orbit data-options="timer:true;timer_speed:2500;">
-								  <li data-orbit-slide="headline-1">
-								    <img src="assets/images/slide-1.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">2x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
-								  <li data-orbit-slide="headline-2">
-								    <img src="assets/images/slide-2.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">3x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
-								  <li data-orbit-slide="headline-3">
-								    <img src="assets/images/slide-3.jpg" /> 
-								    <div class="orbit-caption">
-								    	<h3 class="promo">4x1 en Cinemark es un beneficio para disfrutar todos los días y con quien quiera.</h3>
-								    </div>
-								  </li>
-								</ul>
-							</div>
-							<ul class="slider-nav">
-							  <li><a href="#" data-orbit-link="headline-1">2x1 en Cinemark</a></li>
-							  <li><a href="#" data-orbit-link="headline-2">Registre su email y gane un LED 42"</a></li>
-							  <li><a href="#" data-orbit-link="headline-3">D&eacute;bito Express te lleva de compras</a></li>
-							</ul>
-							<div class="promo-h3">
-								<h3 class="promo">2x1 en Cinemark es un beneficio para disfrutar todos los d&iacute;as y con quien quiera.</h3>
-								<h3 class="promo hide">Registre su email y participe del Sorteo por 3 Smart TV 3D</h3>
-								<h3 class="promo hide">Con D&eacute;bito Express participe en el sorteo de &oacute;rdenes de compra en Disco, Jumbo, Easy, Vea y Blaisten</h3>
-							</div>
 
-						</div>
+						<div class="small-12 large-9 columns main-column">
+
+							<h2>Principios de Protección de Datos y de Privacidad de American Express</h2>
+							<p>Los siguientes Principios de Protección de Datos y de Privacidad (los “Principios”) establecen la forma en la que American Express Company y sus filiales íntegramente participadas, directa e indirectamente (“American Express”) recogerán, utilizarán, almacenarán, compartirán, transmitirán, cancelarán o tratarán de otro modo (conjuntamente, “tratarán”) sus datos personales. Datos personales significa cualquier información relativa a una persona física identificada o identificable. Las normas de protección de datos personales establecidas en estos Principios serán aplicadas por American Express a nivel global, proporcionando una protección adecuada y coherente en el tratamiento de sus datos personales. En estos Principios, “usted” y “su” significa cualquier persona física que sea cliente o empleado de American Express, y cualquier otra persona física cuyos datos personales tratemos, y “nosotros”, “nuestro” y “Grupo American Express” significa American Express</p>
 							
+							<ol>
+								<li><b><i>Recogida:</i></b> Únicamente recogeremos los datos personales que resulten necesarios, y por medios legales y equitativos.</li>
+								<li><b><i>Notificación y Tratamiento: </i></b>
+							   Cuando no resulte evidente por el tipo de productos o servicios que usted requiera, o por la naturaleza de su relación con nosotros, le informaremos acerca de cómo serán tratados sus datos personales, y de qué compañías dentro del Grupo American Express serán responsables de dicho tratamiento. Trataremos sus datos personales de forma equitativa, y únicamente para las finalidades de las que le hayamos informado, para las finalidades permitidas por usted o en la forma en que resulte permitido por la ley aplicable. Adicionalmente, usted podrá oponerse a ciertas clases de tratamiento, según resulte expresamente permitido por la ley aplicable.<p></p>
+
+				              <p></p></li><li><b><i>Elección: </i></b>Damos a nuestros clientes la opción de dejar que sus datos personales sean incluidos o retirados de las listas utilizadas a efectos de marketing, en la forma exigida por la ley aplicable. Esto incluye las ofertas de productos y servicios de American Express y las realizadas conjuntamente con nuestros socios comerciales. Por supuesto, cada uno de nuestros negocios seguirá enviando a los clientes información sobre los productos o servicios que estos reciban de dicho negocio.<p></p>
+
+				              <p></p></li><li><b><i>Calidad de los Datos: </i></b>Utilizamos tecnología adecuada y prácticas de personal bien definidas para tratar sus datos personales con rapidez y precisión. No mantendremos sus datos personales más tiempo del que sea necesario, salvo que la ley aplicable nos exija hacer otra cosa.<p></p> 
+
+				              <p></p></li><li><b><i>Seguridad y Confidencialidad: </i></b>Mantendremos sus datos personales de forma confidencial, y limitaremos el acceso a sus datos personales a aquellas personas que específicamente los necesiten para llevar a cabo sus actividades de negocio, salvo que la ley aplicable permita otra cosa. Nos remitimos a los estándares de la industria, y utilizamos medidas de seguridad administrativas, técnicas y físicas razonables para proteger sus datos personales frente a su acceso no autorizado, destrucción, utilización, modificación o divulgación. Exigimos la aplicación de las medidas de seguridad de datos estándar del sector a los terceros que estén autorizados por nosotros para tratar sus datos personales por nuestra cuenta.<p></p>
+
+				              <p></p></li><li><b><i>Comunicación de Datos: </i></b>Únicamente compartiremos sus datos personales con terceros cuando resulte necesario para proporcionarle productos o servicios o como parte de la naturaleza de su relación con nosotros, cuando previamente le hayamos informado de ello o usted nos lo haya autorizado, en relación con nuestros esfuerzos encaminados a reducir el fraude o la actividad criminal, o en la forma en que resulte permitido por ley.<p></p>
+
+								<p></p></li><li><b><i>Apertura y Acceso a los Datos: </i></b>Previa petición por su parte, le informaremos sobre cómo se tratan sus datos personales, y sobre los derechos y acciones que usted ostenta en virtud de estos Principios. Usted nos podrá solicitar información sobre la naturaleza de los datos personales relativos a usted almacenados o tratados por American Express. Le proporcionaremos acceso a los mismos en la forma exigida por ley de su país, con independencia de la ubicación del tratamiento y el almacenamiento de los datos. Si cualquiera de los datos fuera inexacto o estuviera incompleto, usted podrá solicitar su modificación. <p></p>
+
+								 <p></p></li><li><b><i>Transferencias Internacionales: </i></b>Cuando no resulte evidente por los productos o servicios internacionales que usted solicite o por la naturaleza de su relación con nosotros, le informaremos en caso de que sus datos personales puedan ser transferidos fuera de su país, y nos aseguraremos de que dicha transferencia únicamente se lleve a cabo de conformidad con la ley aplicable. Con independencia del lugar al cual se transfieran sus datos personales, sus datos personales estarán protegidos por estos Principios.<p></p>
+								 
+								 <p></p></li><li><b><i>Responsabilidad: </i></b>Cada compañía del Grupo American Express y sus empleados podrán tratar sus datos personales únicamente de conformidad con estos Principios. Impartimos formación y llevamos a cabo revisiones del cumplimiento de estos Principios por nuestra parte. Los empleados que vulneren estos Principios podrán ser objeto de acciones disciplinarias, que podrán incluir el despido. Se espera que los empleados denuncien cualquier vulneración de estos Principios, y pueden hacerlo a sus superiores, al responsable de compliance de su unidad de negocio, al departamento jurídico, a la Oficina de Privacidad o a la Oficina del Defensor (Ombuds) de la compañía.<p></p>
+								 
+								 <p></p></li><li><b><i>Exigibilidad: </i></b>Usted podrá exigir el cumplimiento estos Principios en su país frente a cualquier compañía del Grupo American Express que sea responsable de sus datos personales, como tercero beneficiario contractual de estos Principios. Si tuviera alguna queja relativa a nuestro incumplimiento de estos Principios y hubiera intentado, de buena fe, resolver su queja a través de nuestro proceso de servicio de atención al cliente, pero no hubiéramos resuelto la queja en un plazo razonable, usted podrá exigir ante las autoridades nuestro cumplimiento de estos Principios. Si usted nos denunciase ante su autoridad local de protección de datos y dicha autoridad de protección de datos determinase que hemos incumplido estos Principios, acataremos las decisiones de la autoridad de protección de datos, pero nos reservamos el derecho a impugnar o apelar dichas decisiones. Estos Principios no afectarán a ningún derecho que usted pudiera tener en virtud de la ley aplicable, las exigencias de cualquier autoridad regulatoria de protección de datos competente o cualquier otra clase de acuerdo que usted pudiera mantener con nosotros.<p></p>
+								</li>
+							</ol>
+							<p>Estos Principios refuerzan nuestro compromiso de proteger sus datos personales. Estos Principios son vinculantes para todas las compañías del Grupo American Express, demostrando nuestro compromiso de privacidad. Además, cada compañía del Grupo American Express que mantenga datos personales podrá disponer de sus propias reglas y prácticas adicionales  para productos o servicios concretos las cuales deberán ser coherentes con estos Principios.</p>
+							<p>Si tuviera cualquier pregunta o comentario acerca de los Principios, le rogamos se ponga en contacto con nosotros.</p>
+							<p><a target="_blank" href="http://www.americanexpress.com/ar/content/ayuda/contactenos.html">http://www.americanexpress.com/ar/content/ayuda/contactenos.html</a></p>
+						</div>
+
+
 					</div>
 				</section>
 
@@ -513,7 +486,7 @@
 				<nav role="navigation" id="sideMenu">
 					<ul class="nav-bar" id="sideMainNav">
 						<li><a href="viajes.html">VIAJES</a></li>
-						<li><a href="categoria.html">GASTRONOMÍA</a></li>
+						<li><a class="current" href="categoria.html">GASTRONOMÍA</a></li>
 						<li><a href="#">COMPRAS</a></li>
 						<li><a href="#">ENTRETENIMIENTOS</a></li>
 						<li><a href="#">ÚNICOS</a></li>
@@ -532,7 +505,7 @@
 		
 		<script src="assets/javascripts/site.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

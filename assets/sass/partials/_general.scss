@@ -19,6 +19,10 @@ body{
 		text-align: center;
 	}
 
+    .ta-right{
+        text-align: right;
+    }
+
 	.no-padding{
 		padding:0;
 	}
@@ -53,13 +57,122 @@ body{
     }
     
     .page-content {
+
         background: #fff;
+        
+        &.legal-pages{
+
+            ol {
+                list-style: decimal outside none;
+                padding-left: 20px;
+
+                li{
+                    margin: 10px 0;
+                }
+            }
+
+            padding-top: 20px;
+
+            & > *{
+                font-size: 14px;
+            }
+
+            a,a:hover{
+                color: #019BDB;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+            
+            &.sections{
+                background: #f1f1f1;
+                padding-top: 0px;
+
+                p.little-par{
+                    margin-bottom: 10px;
+                }
+
+                .main-column{
+                    padding-left: 5%;
+                    padding-right: 5%;
+
+                    ul.second-lvl{
+                        & {
+                            list-style: disc inside none;
+                            padding-left: 45px;
+                            padding-top: 10px;
+
+                        }
+
+                        &.with-links,&.with-links > li{
+                            color: #019BDB;
+                        }
+                        
+                        &.cookies-list{
+                            padding-left: 20px;
+                        }
+                    }
+
+                    .ta-right{
+                        & > a{
+                            display: inline-block;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            h2{
+                margin-bottom: 0.6em;
+                border: none;
+            }
+
+            .checks-section{
+                h3:after{
+                    content: "" !important;
+                }
+                h3{
+                    margin: 5px 0;
+                    padding: 0 !important;
+                    background: transparent !important;
+                    a{
+                        font-size: 0.8em;
+                        font-weight: 100;
+                        color: #fff;
+                        padding: 3% 10.5% !important;
+                        background: none repeat scroll 0 0 #016891;
+                        display: inline-block;
+                        width: 100%;
+
+                    }
+                    a:hover{
+                        background: none repeat scroll 0 0 #4088B1;
+                        text-decoration: none !important;
+                    }
+                }
+
+
+            }
+        }
+
         h3.h3-title{
-            border-bottom: 1px solid #979797;
+            border-bottom: 1px solid #CFCFCF;
             color: #979797;
-            font-size: 1.13em;
-            margin-bottom: 0;
+            font-size: 1.3em;
+            margin: 1.5em 0 1em;
             font-weight: 100;
+        }
+
+        h4.h4-title {
+            color: #979797;
+            font-size: 1.1em;
+            font-weight: 100;
+            margin: 1em 0 0.5em 30px;
+        }
+
+        p.second-lvl{
+            margin-left: 30px;
         }
 
         h2{
