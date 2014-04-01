@@ -54,6 +54,14 @@ body{
     
     .page-content {
         background: #fff;
+        h3.h3-title{
+            border-bottom: 1px solid #979797;
+            color: #979797;
+            font-size: 1.13em;
+            margin-bottom: 0;
+            font-weight: 100;
+        }
+
         h2{
             border-bottom: 1px solid #EFEFEF;
             font-family: 'Noto Sans','Helvetica','Arial';
@@ -166,11 +174,19 @@ body{
         .orbit-test-wrap{
             .orbit-container{
                 ul.orbit-slides-container{
-                    li{
-                        background: url("../images/slide-1.jpg") no-repeat scroll 0 0 #000000;
+                    background: url("../images/slide-1.jpg") no-repeat scroll center center / auto 100% #000000;
                         text-align: center;
+                    li{
+                        
+                        
                         img{
                             display: inline-block;
+                        }
+
+                        img[src=""]{
+                            display: none;
+                            // max-height: 276px;
+                            // width: 100%;
                         }
                     }
 
