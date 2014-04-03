@@ -43,6 +43,8 @@
 		  background: $magenta;
 		  height: 50px;
 		}
+
+		
 	}
 	
 	body{
@@ -463,6 +465,20 @@
 				.copyright{
 					margin-top: 0.7em;
 				}
+
+				.apps{
+					display: block;
+
+					padding-top:10px;
+					margin-bottom:10px;
+					float: none;
+					text-align: center;
+					width: 100%;
+				}
+
+				.main-logo{
+					text-align: center;
+				}
 			}
 
 			.page-content{
@@ -544,6 +560,28 @@
 	body header#header .main-header #cards-selection-mobile ul li{
 		padding: 0.5em 1.1em;
 	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+	ul.tarjetas.by,ul.tarjetas.cre{
+        width: 100%;
+        margin: 5px 0 !important;	
+        li{
+        	width: 16%;
+        }
+    }
+	
+}
+
+@media only screen and(max-width: 470px) {
+	ul.tarjetas.by,ul.tarjetas.cre{
+        width: 100%;
+        margin: 5px 0 !important;	
+        li{
+        	width: 16%;
+        }
+    }
+	
 }
 
 //only safari and chrome

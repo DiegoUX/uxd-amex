@@ -84,15 +84,15 @@ $(document).ready(function(){
 	}
 
 	if( $(".buy-card:nth-child(2)").hasClass("on-check") ){
-		$(".buy-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".buy-cards-list > li:nth-child(2)").removeClass("hidden-card");
 	}
 
 	if( $(".buy-card:nth-child(3)").hasClass("on-check") ){
-		$(".buy-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".buy-cards-list > li:nth-child(3)").removeClass("hidden-card");
 	}
 
 	if( $(".buy-card:nth-child(4)").hasClass("on-check") ){
-		$(".buy-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".buy-cards-list > li:nth-child(4)").removeClass("hidden-card");
 	}
 
 	if( $(".credit-card:nth-child(1)").hasClass("on-check") ){
@@ -100,15 +100,15 @@ $(document).ready(function(){
 	}
 
 	if( $(".credit-card:nth-child(2)").hasClass("on-check") ){
-		$(".credit-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".credit-cards-list > li:nth-child(2)").removeClass("hidden-card");
 	}
 
 	if( $(".credit-card:nth-child(3)").hasClass("on-check") ){
-		$(".credit-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".credit-cards-list > li:nth-child(3)").removeClass("hidden-card");
 	}
 
 	if( $(".credit-card:nth-child(4)").hasClass("on-check") ){
-		$(".credit-cards-list > li:nth-child(1)").removeClass("hidden-card");
+		$(".credit-cards-list > li:nth-child(4)").removeClass("hidden-card");
 	}
 	
 	$(".on-check .check-field").prop('checked',true);
@@ -320,10 +320,24 @@ $(document).ready(function(){
 	});
 
 $(document).ready(function(){
-		$(window).resize(function(){
-			if( $(window).width() > 767){
-				$("#cards-selection-mobile").hide();
+		if( $(window).width() > 767){
+				$(".checks-section > h3").addClass("active");
+				$(".checks-section > h3 + ul").slideDown();
+			}
+			else{
+				$(".checks-section > h3").removeClass("active");
+				$(".checks-section > h3 + ul").slideUp();	
+			}
 
+		$(window).resize(function(){
+			if( $(window).width() > 767 ){
+				$("#cards-selection-mobile").hide();
+				$(".checks-section > h3").addClass("active");
+				$(".checks-section > h3 + ul").slideDown("slow");
+			}
+			else{
+				$(".checks-section > h3").removeClass("active");
+				$(".checks-section > h3 + ul").slideUp("slow");	
 			}
 		});
 });

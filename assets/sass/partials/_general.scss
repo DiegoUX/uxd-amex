@@ -617,7 +617,9 @@ body.two-columns-page{
                 padding-bottom: 1em;
                 padding-top: 1em;
                 margin-top: 1.5em;
-
+                #tarjetas{
+                    margin: 10px 0;
+                }
                 a{
                     display: inline-block;
                     max-width: 100%;
@@ -646,6 +648,14 @@ body.two-columns-page{
 
                 ul{
                     margin: 0;
+                    &.tarjetas.by,&.tarjetas.cre{
+                        display: inline-block;
+                        img{
+                            // @include border-radius(3px);
+                            border-radius: 3px;
+                            box-shadow: 1px 1px 3px 1px #CCCCCC;
+                        }
+                    }
                     li{
                         display: inline-block;
                         padding-right: 0.2em;

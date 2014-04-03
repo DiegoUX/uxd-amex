@@ -7,7 +7,22 @@ footer{
 	.main-logo{
 		text-align: right;
 		margin-top: 1em;
+		.apps{
+			float: left;
+			padding-top:10px;
+
 		}
+
+		.google-play-link,.app-store-link{
+			display: inline-block;
+		}
+		
+		.google-play-link > img {
+		    height: 41px;
+		    padding-left: 5px;
+		}
+
+	}
 		
 	.footer-links-wrapper{
 		padding-top: 2% !important;
