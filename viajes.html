@@ -84,7 +84,7 @@
 								
 								</a>
 							</div>
-							<div class="cards image-card-mobile">
+							<!-- <div class="cards image-card-mobile">
 								<a href="#" class="card-link">
 
 									<ul class="buy-cards-list">
@@ -118,12 +118,12 @@
 									</ul>
 								
 								</a>
-							</div>
+							</div> -->
 							<div class="cards-select-link-wrapper hide-for-small">
 								<a href="#" data-dropdown="cards-selection-web" class="cards-select-link">Seleccione sus Tarjetas American Express</a>
-								<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
+								<!-- <div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
 									<ul>
-										<li class="buy-card">
+										<li class="buy-card on-check">
 											<div class="lit-col-5">
 												<input type="radio" name="cards-check1" class="check-field">
 											</div>
@@ -217,14 +217,14 @@
 										
 									</ul>
 									<a href="#" class="app">Aplicar</a>
-								</div>
+								</div> -->
 							<!-- end cards - selection dropdown / web -->
 							</div>
 							<div class="cards-select-link-wrapper hide-for-medium-up">
-								<a href="#" class="cards-select-link no-arrow">Seleccione sus Tarjetas</a>
+								<a href="#" class="cards-select-link no-arrow" data-dropdown="cards-selection-web">Seleccione sus Tarjetas</a>
 							</div>
 						</div>
-						<div class="columns small-12 hide-for-768-up" id="cards-selection-mobile">
+						<!-- <div class="columns small-12 hide-for-768-up" id="cards-selection-mobile">
 							<ul>
 								<li class="buy-card">
 									<div class="lit-col-5">
@@ -270,7 +270,8 @@
 										<span for="cards-check">La Tarjeta American Express</span>
 									</div>
 								</li>
-							
+							</ul>
+							<ul>
 								<li class="credit-card">
 									<div class="lit-col-5">
 										<input type="radio" name="cards-check2" class="check-field">
@@ -283,6 +284,103 @@
 									</div>	
 								</li>
 								
+								<li class="credit-card aa-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check2" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/aerolineas.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Platinum Credit Card Aerolineas Plus</span>
+									</div>
+								</li>
+								<li class="credit-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check2" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/gold-credit.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Gold Credit Card</span>
+									</div>
+								</li>
+								<li class="credit-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check2" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/american-credit.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">La Tarjeta de Cr&eacute;dito American Express</span>
+									</div>
+								</li>
+								
+							</ul>
+							<a href="#" class="app">Aplicar</a>
+						</div> -->
+						<div id="cards-selection-web" class="f-dropdown content" data-dropdown-content>
+							<ul>
+								<li class="buy-card on-check">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/centurion.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">Centurion from<br> American Express</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/Platinum.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Platinum Card</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/Gold.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">The Gold Card</span>
+									</div>
+								</li>
+								<li class="buy-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check1" class="check-field">
+									</div>
+									<div class="lit-col-15">
+										<img src="assets/images/american.png" alt="">
+									</div>
+									<div class="lit-col-75">
+										<span for="cards-check">La Tarjeta American Express</span>
+									</div>
+								</li>
+
+							</ul>
+							<ul>
+								<li class="credit-card">
+									<div class="lit-col-5">
+										<input type="radio" name="cards-check2" class="check-field">
+									</div>	
+									<div class="lit-col-15">
+										<img src="assets/images/Platinum-credit.png" alt="">
+									</div>	
+									<div class="lit-col-75">
+										<span for="cards-check">The Platinum Credit Card</span>
+									</div>	
+								</li>
 								<li class="credit-card aa-card">
 									<div class="lit-col-5">
 										<input type="radio" name="cards-check2" class="check-field">
@@ -362,7 +460,6 @@
 					</div>
 
 					<!-- search form -->
-					
 					<div class="row band-wrap">
 						<div class="header-form extra-width">
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
@@ -370,10 +467,12 @@
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Marcas, Restaurantes, etc..." class="search-field">
+								<!-- <input type="search" placeholder="Ej: Marcas, etc..." class="search-field hide-for-medium-up"> -->
 								<a href="#" class="search-icon"></a>
 							</div>
 							<div class="columns large-4 small-12 no-padding-left-large double-padding-right-large">
 								<input type="search" placeholder="Ej: Direccion, Ciudad, etc..." class="dir-field">
+								<!-- <input type="search" placeholder="Ej: Direccion, etc..." class="dir-field hide-for-medium-up"> -->
 								<a href="#" class="dir-icon"></a>
 							</div>
 						</div>
