@@ -386,30 +386,30 @@ $(document).ready(function(){
 });
 
 // ESTO HACE QUE SE APLIQUE UN MARGEN A LA BANDA AMARILLA CUANDO SE DESPLGIEGA EL dropdown
-$(document).ready(function(){
-	$(".cards-select-link.no-arrow").click(function(event){
+// $(document).ready(function(){
+// 	$(".cards-select-link.no-arrow").click(function(event){
 		
-		if( $("#cards-selection-web").hasClass("open") )
-		    {$("header .band-wrap").removeClass("drop-opened");}
-		else{
-		    $("header .band-wrap").addClass("drop-opened");
-		}
+// 		if( $("#cards-selection-web").hasClass("open") )
+// 		    {$("header .band-wrap").removeClass("drop-opened");}
+// 		else{
+// 		    $("header .band-wrap").addClass("drop-opened");
+// 		}
 
-	});
+// 	});
 
-	$("header .main-header").click(function(){
-		if( $("#cards-selection-web").hasClass("open") )
-		    {$("header .band-wrap").removeClass("drop-opened");}
-		else{
-		    // $("header .band-wrap").addClass("drop-opened");
-		}
-	});
+// 	$("header .main-header").click(function(){
+// 		if( $("#cards-selection-web").hasClass("open") )
+// 		    {$("header .band-wrap").removeClass("drop-opened");}
+// 		else{
+// 		    // $("header .band-wrap").addClass("drop-opened");
+// 		}
+// 	});
 
-	$("header .main-header #cards-selection-web").click(function(e){
-		e.stopPropagation();
-	});
+// 	$("header .main-header #cards-selection-web").click(function(e){
+// 		e.stopPropagation();
+// 	});
 
-	$("header .main-header #cards-selection-web a.app").click(function(e){
-		$("header .band-wrap").removeClass("drop-opened");		
-	});
-});
+// 	$("header .main-header #cards-selection-web a.app").click(function(e){
+// 		$("header .band-wrap").removeClass("drop-opened");		
+// 	});
+// });

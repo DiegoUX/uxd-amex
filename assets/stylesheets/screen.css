@@ -1600,13 +1600,13 @@ a.sidebar-button h4 {
 }
 @media only screen and (max-width: 767px) {
   /* line 183, ../sass/partials/_mediaquery.scss */
-  header .drop-opened {
-    margin-top: 419px;
+  #cards-selection-web.open + .big-margin-for-small {
+    margin-bottom: 409px !important;
   }
 
   /* line 188, ../sass/partials/_mediaquery.scss */
   #cards-selection-web.open {
-    top: 6% !important;
+    top: 108px !important;
     left: 0 !important;
     width: 100% !important;
   }
