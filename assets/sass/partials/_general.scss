@@ -750,6 +750,7 @@ body.two-columns-page{
                             font-family: Helvetica,Arial;
                             font-size: 1em;
                             font-weight: 100;
+                            margin-right: 10px;
 
                             &:hover{
                                 text-decoration: underline;
@@ -829,6 +830,16 @@ body.two-columns-page{
 
                 &:hover{
                     background: $blue-current-menu;
+                }
+
+                &.destinies{
+                    font-size: 12px !important;
+                    line-height: 1em !important;
+                    // margin-left: 10px !important;
+                    &:hover{
+                        color: #FFFFFF !important;
+                        text-decoration: none !important;
+                    }
                 }
             }
 
