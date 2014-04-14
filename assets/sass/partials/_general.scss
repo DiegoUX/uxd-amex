@@ -453,6 +453,28 @@ body.category{
                 padding-right: 0px;
                 margin-bottom: 1em;
 
+                a.link-acc-2nd-lvl{
+                    &:after{
+                        color: #019BDB;
+                        content: "";
+                        display: inline-block;
+                        float: right;
+                        font-family: icomoon;
+                        font-size: 1.4em;
+                        font-weight: 100 !important;
+                        line-height: 1em;
+                        margin-left: 10px;
+                        padding-top: 3px;
+                        position: relative;
+
+                        // vertical-align: middle;
+
+                    }
+                    &.active-2nd-lvl:after{
+                        content: "";
+
+                    }
+                }
                 h3{
                     background: none repeat scroll 0 0 #016891;
                     color: #FFFFFF;

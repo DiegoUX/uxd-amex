@@ -27,6 +27,55 @@ $(document).ready(function(){
 
 	});
 
+// Second-lvl Filter accordeon script
+$(document).ready(function(){
+	$("a.link-acc-2nd-lvl").click(function(e){
+		$(this).next("ul").slideToggle("slow");
+		$(this).toggleClass("active-2nd-lvl");
+		e.preventDefault();
+	});
+});
+
+// Al click en el primer nivel de CheckBox de ese filtro, los del segundo nivel, hijos de ese, se checkean
+
+$(document).ready(function(){
+
+	$(".check-row.level-1 > input[type=checkbox]").click(function(e){
+
+		if( $(this).prop("checked") ){
+			$(this).siblings("ul").find(".check-row.level-2 > input:checkbox").prop("checked",true);	
+		}
+
+		else{
+			$(this).siblings("ul").find(".check-row.level-2 > input:checkbox").prop("checked",false);
+		}
+	});
+
+	$(".check-row.level-1 .check-row.level-2 > input:checkbox").click(function(e){
+
+		if( $(this).prop("checked") ){
+			// $(this).siblings("ul").find(".check-row.level-2 > input:checkbox").prop("checked",true);	
+		}
+
+		else{
+			
+			if ( $(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked") ){
+				$(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked",false);
+			}
+			else{ 
+				// $(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked",true);	
+			}
+		}
+	});
+
+
+});
+
+// $(document).ready(function(){
+// 	$(".check-row.level-1 > input[type=checkbox]").click(function(e){
+// 		$(this).siblings("ul").find(".check-row.level-2 > input:checkbox").prop("checked","true");
+// 	});
+// });
 
 // SLIDES SCRIPT
 $(document).ready(function(){		
@@ -384,32 +433,3 @@ $(document).ready(function(){
 			}
 		});
 });
-
-// ESTO HACE QUE SE APLIQUE UN MARGEN A LA BANDA AMARILLA CUANDO SE DESPLGIEGA EL dropdown
-// $(document).ready(function(){
-// 	$(".cards-select-link.no-arrow").click(function(event){
-		
-// 		if( $("#cards-selection-web").hasClass("open") )
-// 		    {$("header .band-wrap").removeClass("drop-opened");}
-// 		else{
-// 		    $("header .band-wrap").addClass("drop-opened");
-// 		}
-
-// 	});
-
-// 	$("header .main-header").click(function(){
-// 		if( $("#cards-selection-web").hasClass("open") )
-// 		    {$("header .band-wrap").removeClass("drop-opened");}
-// 		else{
-// 		    // $("header .band-wrap").addClass("drop-opened");
-// 		}
-// 	});
-
-// 	$("header .main-header #cards-selection-web").click(function(e){
-// 		e.stopPropagation();
-// 	});
-
-// 	$("header .main-header #cards-selection-web a.app").click(function(e){
-// 		$("header .band-wrap").removeClass("drop-opened");		
-// 	});
-// });
