@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 
 $(document).ready(function(){
-		$(".checks-section.hide-for-medium-up > ul").hide();
+		$(".checks-section > ul").hide();
 		$(".checks-section h3").click(function(){
 			$(this).next("ul").slideToggle("slow");
 			$(this).toggleClass("active");
@@ -29,6 +29,7 @@ $(document).ready(function(){
 
 // Second-lvl Filter accordeon script
 $(document).ready(function(){
+	$("a.link-acc-2nd-lvl + ul").hide();
 	$("a.link-acc-2nd-lvl").click(function(e){
 		$(this).next("ul").slideToggle("slow");
 		$(this).toggleClass("active-2nd-lvl");
@@ -53,17 +54,27 @@ $(document).ready(function(){
 
 	$(".check-row.level-1 .check-row.level-2 > input:checkbox").click(function(e){
 
-		if( $(this).prop("checked") ){
-			// $(this).siblings("ul").find(".check-row.level-2 > input:checkbox").prop("checked",true);	
+		if( $(this).prop("checked") ){ // SI despues del click esta checkeado...
+			var nochecked = false;
+			cbs = $(this).parents(".check-row.level-2").siblings(".level-2").find("input:checkbox");
+			 for (var i = cbs.size() - 1; i >= 0; i--) {
+			 	if( ! (cbs[i].checked) ) {
+			 		nochecked = true; // there is an element without check!
+			 	}
+			 };
+
+			 if(! nochecked) {
+			 	$(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked",true);
+			 }
 		}
 
-		else{
+		else{ // SI despues del click no esta checkeado...
 			
 			if ( $(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked") ){
 				$(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked",false);
 			}
 			else{ 
-				// $(this).parents(".check-row.level-1").children(".check-row.level-1 > input:checkbox").prop("checked",true);	
+					
 			}
 		}
 	});
@@ -393,26 +404,26 @@ $(document).ready(function(){
 
 // ESTO HACE QUE EL FILTRO DEL SIDEBAR SE ABRA O CIERRE DE ACUERDO A LA RESOLUCION DEL DISPOSITIVO/ VENTANA SIZE.
 $(document).ready(function(){
-		if( $(window).width() > 767){
-				$(".checks-section > h3").addClass("active");
-				$(".checks-section > h3 + ul").slideDown();
-			}
-			else{
-				$(".checks-section > h3").removeClass("active");
-				$(".checks-section > h3 + ul").slideUp();	
-			}
+		// if( $(window).width() > 767){
+		// 		$(".checks-section > h3").addClass("active");
+		// 		$(".checks-section > h3 + ul").slideDown();
+		// 	}
+		// 	else{
+		// 		$(".checks-section > h3").removeClass("active");
+		// 		$(".checks-section > h3 + ul").slideUp();	
+		// 	}
 
-		$(window).resize(function(){
-			if( $(window).width() > 767 ){
-				$("#cards-selection-mobile").hide();
-				$(".checks-section > h3").addClass("active");
-				$(".checks-section > h3 + ul").slideDown("slow");
-			}
-			else{
-				$(".checks-section > h3").removeClass("active");
-				$(".checks-section > h3 + ul").slideUp("slow");
-			}
-		});
+		// $(window).resize(function(){
+		// 	if( $(window).width() > 767 ){
+		// 		$("#cards-selection-mobile").hide();
+		// 		$(".checks-section > h3").addClass("active");
+		// 		$(".checks-section > h3 + ul").slideDown("slow");
+		// 	}
+		// 	else{
+		// 		$(".checks-section > h3").removeClass("active");
+		// 		$(".checks-section > h3 + ul").slideUp("slow");
+		// 	}
+		// });
 });
 
 // ESTO HACE QUE EL PLACEHOLDER DE LOS INPUT DE LA BANDA AMARILLA CAMBIEN SU CONTENIDO DEPENDIENDO DE LA RESOLUCION
