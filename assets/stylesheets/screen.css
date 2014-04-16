@@ -314,73 +314,74 @@ header .desktop-menu nav ul li:last-child a {
 header .desktop-menu nav ul li a {
   display: inline-block;
   width: 100%;
-  padding: 0.5em 2.51em;
+  padding: 0.51em 2.51em;
   background: #019bdb;
+  height: 42px;
 }
-/* line 267, ../sass/partials/_header.scss */
+/* line 268, ../sass/partials/_header.scss */
 header .desktop-menu nav ul li a:hover, header .desktop-menu nav ul li a.current, header .desktop-menu nav ul li a:active {
   background: #016891;
 }
-/* line 271, ../sass/partials/_header.scss */
+/* line 272, ../sass/partials/_header.scss */
 header .desktop-menu nav ul li a span.text {
   color: #fff;
   text-decoration: none;
 }
-/* line 277, ../sass/partials/_header.scss */
+/* line 278, ../sass/partials/_header.scss */
 header .desktop-menu nav ul li a span.icon:before {
   color: #FFFFFF;
   font-family: 'icomoon';
   padding-right: 0.4em;
 }
-/* line 292, ../sass/partials/_header.scss */
+/* line 293, ../sass/partials/_header.scss */
 header .main-header .link-logo {
   display: inline-block;
   margin-left: -0.9375em;
   margin-top: 3em;
   max-width: 100%;
 }
-/* line 300, ../sass/partials/_header.scss */
+/* line 301, ../sass/partials/_header.scss */
 header .main-header .cards {
   padding-top: 30px;
   text-align: right;
 }
-/* line 301, ../sass/partials/_header.scss */
+/* line 302, ../sass/partials/_header.scss */
 header .main-header .cards.image-card-mobile {
   display: none;
 }
-/* line 308, ../sass/partials/_header.scss */
+/* line 309, ../sass/partials/_header.scss */
 header .main-header .cards .card-link {
   display: inline-block;
   margin-right: 12px;
   height: 50px;
 }
-/* line 313, ../sass/partials/_header.scss */
+/* line 314, ../sass/partials/_header.scss */
 header .main-header .cards .card-link > ul {
   margin: 0;
   display: inline-block;
 }
-/* line 316, ../sass/partials/_header.scss */
+/* line 317, ../sass/partials/_header.scss */
 header .main-header .cards .card-link > ul > li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 320, ../sass/partials/_header.scss */
+/* line 321, ../sass/partials/_header.scss */
 header .main-header .cards .card-link > ul > li.hidden-card {
   display: none;
 }
-/* line 325, ../sass/partials/_header.scss */
+/* line 326, ../sass/partials/_header.scss */
 header .main-header .cards .card-link .card {
   float: right;
   padding-left: 2%;
 }
-/* line 333, ../sass/partials/_header.scss */
+/* line 334, ../sass/partials/_header.scss */
 header .main-header .cards-select-link-wrapper {
   padding-bottom: 30px;
   padding-top: 6px;
   text-align: right;
 }
-/* line 338, ../sass/partials/_header.scss */
+/* line 339, ../sass/partials/_header.scss */
 header .main-header .cards-select-link-wrapper .cards-select-link {
   display: inline-block;
   color: #019bdb;
@@ -389,12 +390,12 @@ header .main-header .cards-select-link-wrapper .cards-select-link {
   font-size: 0.85em;
   font-weight: 100;
 }
-/* line 345, ../sass/partials/_header.scss */
+/* line 346, ../sass/partials/_header.scss */
 header .main-header .cards-select-link-wrapper .cards-select-link:hover {
   text-decoration: none;
   color: #019bdb;
 }
-/* line 350, ../sass/partials/_header.scss */
+/* line 351, ../sass/partials/_header.scss */
 header .main-header .cards-select-link-wrapper .cards-select-link:after {
   border-left: 4px solid rgba(0, 0, 0, 0);
   border-right: 4px solid rgba(0, 0, 0, 0);
@@ -407,7 +408,7 @@ header .main-header .cards-select-link-wrapper .cards-select-link:after {
   top: 0;
   width: 0;
 }
-/* line 364, ../sass/partials/_header.scss */
+/* line 365, ../sass/partials/_header.scss */
 header .main-header .cards-select-link-wrapper .cards-select-link.no-arrow:after {
   display: none;
 }

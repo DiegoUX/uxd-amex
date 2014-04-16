@@ -261,8 +261,9 @@ header{
             a{
                 display: inline-block;
                 width: 100%;
-                padding: 0.5em 2.51em;
+                padding: 0.51em 2.51em;
                 background: $blue-site;
+                height: 42px;
 
                 &:hover, &.current, &:active{
                     background: $blue-current-menu;
