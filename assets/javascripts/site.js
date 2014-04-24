@@ -133,7 +133,7 @@ $(document).ready(function(){
 		});
 	});
 
-//para que el evento no se propaga al hacer click en cualquiera de esos 3..
+//para que el evento no se propague al hacer click en cualquiera de esos 3..
 $(document).ready(function(){		
 		$("header .header-form .search-icon, header .header-form .dir-icon,#cards-selection-mobile > a.app").click(function(e){
 			e.stopPropagation();
@@ -208,7 +208,7 @@ $(document).ready(function(){ // al Iniciar el Documento..
 // Script para que se tilde el radiobutt al click
 
 $(document).ready(function(){		
-		//al click en cualquier en li dentro de caso web y mobile.
+		//al click en cualquier li dentro de caso web y mobile.
 
 		$("#cards-selection-web li,#cards-selection-mobile li").click(function(){
 
@@ -221,7 +221,7 @@ $(document).ready(function(){
 
 			else{
 				$(this).find(".check-field").prop('checked',true);
-				$(this).addClass("on-check");
+				$(this).addClass("on-check");     
 				}
 		});
 
@@ -290,6 +290,11 @@ $(document).ready(function(){
 		$(".image-card-web ul.buy-cards-list li:nth-child(1)").toggleClass("hidden-card");
 		$(".image-card-web ul.buy-cards-list li:nth-child(1)").siblings("li").addClass("hidden-card");
 		$(".image-card-web ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
+
+		// if( $(".image-card-web ul.buy-cards-list li:nth-child(1)").hasClass("hidden-card") ) {
+		// 	alert("se deselecciono la tarjeta"); 
+		// 	// do something ... 
+		// }
 	});
 
 	$("#cards-selection-web li.buy-card:nth-child(2)").click(function(){
@@ -341,61 +346,61 @@ $(document).ready(function(){
 });
 
 // script para las paginas que se reemplazan arriba al click en la desplegable - caso mobile
-$(document).ready(function(){
-	// ************* BUY CARDS ******************
-	$("#cards-selection-mobile li.buy-card:nth-child(1)").click(function(){
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(1)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(1)").siblings("li").addClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
-	});
+// $(document).ready(function(){
+// 	// ************* BUY CARDS ******************
+// 	$("#cards-selection-mobile li.buy-card:nth-child(1)").click(function(){
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(1)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(1)").siblings("li").addClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.buy-card:nth-child(2)").click(function(){
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(2)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(2)").siblings("li").addClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.buy-card:nth-child(2)").click(function(){
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(2)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(2)").siblings("li").addClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.buy-card:nth-child(3)").click(function(){
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(3)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(3)").siblings("li").addClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.buy-card:nth-child(3)").click(function(){
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(3)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(3)").siblings("li").addClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.buy-card:nth-child(4)").click(function(){
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(4)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.buy-cards-list li:nth-child(4)").siblings("li").addClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.buy-card:nth-child(4)").click(function(){
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(4)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.buy-cards-list li:nth-child(4)").siblings("li").addClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").addClass("hidden-card");
+// 	});
 
-	// ************* CREDIT CARDS ******************
+// 	// ************* CREDIT CARDS ******************
 
-	$("#cards-selection-mobile li.credit-card:nth-child(1)").click(function(){
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(1)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(1)").siblings("li").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.credit-card:nth-child(1)").click(function(){
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(1)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(1)").siblings("li").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.credit-card:nth-child(2)").click(function(){
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").siblings("li").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.credit-card:nth-child(2)").click(function(){
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(2)").siblings("li").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.credit-card:nth-child(3)").click(function(){
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(3)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(3)").siblings("li").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.credit-card:nth-child(3)").click(function(){
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(3)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(3)").siblings("li").addClass("hidden-card");
+// 	});
 
-	$("#cards-selection-mobile li.credit-card:nth-child(4)").click(function(){
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(4)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.credit-cards-list li:nth-child(4)").siblings("li").addClass("hidden-card");
-	});
+// 	$("#cards-selection-mobile li.credit-card:nth-child(4)").click(function(){
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(4)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.credit-cards-list li:nth-child(4)").siblings("li").addClass("hidden-card");
+// 	});
 
-	// ********* caso particular AA ****************
-	$("#cards-selection-mobile li.credit-card.aa-card").click(function(){
-		// $(".image-card-mobile ul.credit-cards-list li:nth-child(4)").toggleClass("hidden-card");
-		$(".image-card-mobile ul.buy-cards-list li").addClass("hidden-card");
-	});
+// 	// ********* caso particular AA ****************
+// 	$("#cards-selection-mobile li.credit-card.aa-card").click(function(){
+// 		// $(".image-card-mobile ul.credit-cards-list li:nth-child(4)").toggleClass("hidden-card");
+// 		$(".image-card-mobile ul.buy-cards-list li").addClass("hidden-card");
+// 	});
 
-});
+// });
 
 
 
