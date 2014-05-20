@@ -37,7 +37,7 @@ header{
             right: 34px;
             top: 4px;
 
-            &:hover{
+            &:hover,&:focus{
                 background: $blue-current-menu;
             }
         }
@@ -222,8 +222,9 @@ header{
 
 
 
-            &:first-child:hover,&:last-child:hover{
-                a:before{
+            // &:first-child:hover,&:last-child:hover{
+            &:first-child,&:last-child{
+                a:hover:before,a:focus:before{
                     border-top: 44px solid $blue-current-menu;
                 }
             }
@@ -265,7 +266,7 @@ header{
                 background: $blue-site;
                 height: 42px;
 
-                &:hover, &.current, &:active{
+                &:hover, &.current, &:active, &:focus{
                     background: $blue-current-menu;
                 }
 

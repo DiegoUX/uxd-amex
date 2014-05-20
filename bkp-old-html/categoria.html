@@ -24,7 +24,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="two-columns-page detalle-viajes">
+	<body class="sidebar-page category">
 		<section role="main"><!-- We need this box for the menu - mobile  -->
 			<!-- section[role="main"] must be direct body's child and #sidebar's brother -->
 			<div class="main-wrapper">
@@ -426,32 +426,32 @@
 						<nav>
 							<ul>
 								<li>
-									<a href="viajes.html" tabindex="1">
+									<a href="viajes.html">
 										<span class="icon"></span>
 										<span class="text">VIAJES</span>
 									</a>
 								</li>
 								<li>
-									<a href="categoria.html" tabindex="2">
+									<a href="categoria.html">
 										<span class="icon"></span>
 										<span class="text">GASTRONOMÍA</span>
 									</a>
 									
 								</li>
 								<li>
-									<a href="#" tabindex="3">
+									<a href="#">
 										<span class="icon"></span>
 										<span class="text">COMPRAS</span>	
 									</a>
 								</li>
 								<li>
-									<a href="#" tabindex="4">
+									<a href="#">
 										<span class="icon"></span>
 										<span class="text">ENTRETENIMIENTO</span>
 									</a>
 								</li>
 								<li>
-									<a href="#" tabindex="5">
+									<a href="#">
 										<span class="icon"></span>
 										<span class="text">ÚNICOS</span>	
 									</a>
@@ -485,253 +485,219 @@
 				<!-- MIDDLE SECTION -->
 				<section id="content" class="container" ng-view>
 					<div class="row page-content">
-						<div class="small-12 large-6 columns left">
-							<!-- <h2 class="news">
-								NOVEDADES
-							</h2> -->
-							<h2 class="column-bar">
-								<span class="left-triangle"></span>
-								MEMBERSHIP REWARDS <span>&reg;</span></h2>
-								<!-- <span class="right-triangle"></span> -->
+
+						<div class="small-12 large-3 columns sidebar-column">
+							<form action="#" class="filter-form">	
+								<h2>FILTROS</h2>
+
+								<section class="radios">
+									<div><input id="beneficios" type="radio" name="filtros-radios"><label for="beneficios">Beneficios</label></div>
+									<div><input type="radio" name="filtros-radios" id="membership-rewards"><label for="membership-rewards">Membership Rewards</label></div>
+								</section>
+								<section class="filter-button">
+									<a href="#" class="filter-link">FILTRAR</a>
+								</section>
+								<!-- gastronomia - checkboxsection -->
+
+								<section class="checks-section">
+									<h3>Gastronom&iacute;a</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item" id="item">
+											<label for="item">Tipo de Comida</label>
+											<a href="#" class="link-acc-2nd-lvl"></a>
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-1" id="item-1">
+													<label for="item-1">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-2" id="item-2">
+													<label for="item-2">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-3" id="item-3">
+													<label for="item-3">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-4" id="item-4">
+													<label for="item-4">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-5" id="item-5">
+													<label for="item-5">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-6" id="item-6">
+													<label for="item-6">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-7" id="item-7">
+													<label for="item-7">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-8" id="item-8">
+													<label for="item-8">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-9" id="item-9">
+													<label for="item-9">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-10" id="item-10">
+													<label for="item-10">Tipo de Comida</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-11" id="item-11">
+													<label for="item-11">Tipo de Comida</label>
+												</li>
+											</ul>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-12" id="item-12">
+											<label for="item-12">Barrio/Localidad</label>
+											<a href="#" class="link-acc-2nd-lvl"></a>
+											<!-- second level items -->
+											<ul>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-13" id="item-13">
+													<label for="item-13">Costanera Norte</label>
+												</li>
+												<li class="check-row level-2">
+													<input type="checkbox" name="item-14" id="item-14">
+													<label for="item-14">Recoleta</label>
+												</li>
+											</ul>
+										</li>
+									</ul>	
+
+								</section>
+
+								<!-- beneficio - checkboxsection -->
+
+								<section class="checks-section">
+									<h3>Beneficio</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-15" id="item-15">
+											<label for="item-15">Promociones</label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-16" id="item-16">
+											<label for="item-16">Cuotas sin Inter&eacute;s </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-17" id="item-17">
+											<label for="item-17">Canje por puntos </label>
+										</li>
+									</ul>	
+
+								</section>
+
+								<!-- Acceso - checkboxsection -->
+
+								<section class="checks-section">
+									<h3>Acceso</h3>
+									<!-- first level items -->
+									<ul>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-18" id="item-18">
+											<label for="item-18">Con Certificado </label>
+										</li>
+										<li class="check-row level-1">
+											<input type="checkbox" name="item-19" id="item-19">
+											<label for="item-19">Sin Certificado </label>
+										</li>
+									</ul>	
+
+								</section>
+								<section class="filter-button">
+									<a href="#" class="filter-link">FILTRAR</a>
+								</section>
+							</form>
+
+						</div>
+
+						<div class="small-12 large-9 columns main-column">
+							<div class="results-head row">
+								<div class="columns large-6 small-12 header-col">
+									<h2><span class="results-number">30</span> resultados para <strong>"gastronom&iacute;a"</strong></h2>
+								</div>
+								<div class="columns large-6 small-12 conf-col">
+									<label for="critery">Ordenar</label>
+									<select name="critery" id="critery">
+										<option value="Beneficio">Beneficio</option>
+										<option value="Beneficio2">Beneficio2</option>
+									</select>
+									<label for="cant-number">Ver</label>
+									<select name="cant-number" id="cant-number">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</div>
+
+							</div>
 							<article class="art">
-								<div class="col-20"><img src="http://placehold.it/80x80" alt="new-image"></div>
-								<div class="col-80">
-									<h3><a href="#">Aerol&iacute;neas Argentinas</a></h3>
-									<h4>Canje de <span class="points-number">15.100</span> puntos</h4>
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
 								</div>
 							</article>
-							
-							<div class="accordions-wrapper">
-								<div class="acc">
-									<h3 class="link-acc active">
-										Detalle<span class="more-icon"></span>
-									</h3>
-									<div class="acc-item-content">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, corporis, voluptate reiciendis quos nesciunt architecto cum voluptatum maiores quibusdam odit rerum placeat aperiam facere dolor alias consequuntur officia dolore a?
-										</p>
-									</div>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
 								</div>
-								<div class="acc">
-									<h3 class="link-acc active">
-										T&eacute;rminos y condiciones<span class="more-icon"></span>
-									</h3>
-									<div class="acc-item-content">
-										<p class="uppercase-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quasi, ad aperiam quia quos facilis repudiandae voluptatibus recusandae totam consequatur fuga placeat sapiente pariatur reprehenderit nemo tempora quo! Unde, veritatis numquam officiis praesentium ex esse dicta itaque molestiae autem ipsam et modi totam omnis consequuntur commodi quisquam aut. Tenetur, doloribus, eum ipsam adipisci similique molestiae soluta voluptatem earum repellat delectus maiores quod magni quasi a sapiente. Officia, voluptatum, consequatur vel corporis id cupiditate neque debitis aperiam quibusdam minus excepturi doloremque assumenda ex. Quis, eum, veritatis, molestiae, labore corporis sit beatae officiis temporibus eveniet voluptas praesentium ratione laudantium quae enim culpa.
-										</p>
-									</div>
-									
+							</article>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
 								</div>
-
-								<div class="cards-ben">
-									<h3 class="uppercase-text">
-										Beneficio v&aacute;lido para las siguiente tarjetas
-									</h3>
-									<p>Del 01 de enero del 2014 al 28 de febrero del 2014</p>
-<!-- 									<ul class="cards-list">
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-list-link">
-												<img src="http://placehold.it/45x30" alt="card">
-											</a>
-										</li>
-									</ul> -->
-									<div id="tarjetas">
-										<!-- <img src="assets/images/tarjetas.png" alt="Tarjetas">
-										<ul class="tarjetas">
-											<li><span data-tooltip title="Centurion from American Express"></span></li>
-											<li><span data-tooltip title="The Platinum Card"></span></li>
-											<li><span data-tooltip title="The Platinum Credit Card"></span></li>
-											<li><span data-tooltip title="The Platinum Credit Card Aerolineas Plus"></span></li>
-											<li><span data-tooltip title="The Gold Card"></span></li>
-											<li><span data-tooltip title="The Gold Credit Card"></span></li>
-										</ul> -->
-										<ul class="tarjetas by">
-											<li>
-												<img src="assets/images/cards-header/TarjetaCenturion_2012.png" alt="Tarjeta de Compra Centuri&oacute;n">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/platinum.png" alt="Tarjeta de Compra Platinum">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/Gold.png" alt="Tarjeta de Compra Gold">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/American-tarjeta.png" alt="Tarjeta de Compra American Express">
-											</li>
-										</ul>
-										<ul class="tarjetas cre">
-											<li>
-												<img src="assets/images/cards-header/Platinum-credito.png" alt="Tarjeta de Cr&eacute;dito Platinum">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/AA.png" alt="Tarjeta de Cr&eacute;dito Aerol&iacute;neas Argentinas">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/Gold-credito.png" alt="Tarjeta de Cr&eacute;dito Gold">
-											</li>
-											<li>
-												<img src="assets/images/cards-header/American-credito.png" alt="Tarjeta de Cr&eacute;dito American Express">
-											</li>
-										</ul>
-									</div>
+							</article>
+							<article class="art">
+								<div class="col-13"><a href="#"><img src="http://placehold.it/80x80" alt="new-image"></a></div>
+								<div class="col-87">
+									<h3><a href="#">Creciendo</a></h3>
+									<h4><span>| </span>Hasta 6 cuotas sin inter&eacute;s</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, perspiciatis quia enim quidem deleniti alias.</p>
+									<div class="cat"><span>Av. Córdoba 2544, CABA y 4 sucursales más…</span></div>
 								</div>
-							</div>
-
-							<div class="link-back-wrapper">
-								<a href="#" class="link-back">
-									<span>&laquo;</span><span class="text">Volver</span>
-								</a>
-							</div>
-
-						</div>
-						<div class="small-12 large-6 columns no-padding-left-large">
-							<div class="right-column-wrapper">
-								<h2>DESTINOS</h2>
-								<ul class="list">
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
-									<li>
-										<a href="#">Certificado Ida y Vuelta Posadas en clase T</a>
-										<a href="#" class="change-now destinies">CANJEAR AHORA</a>
-									</li>
+							</article>
+							<div class="foot-pagination">
+								<a href="#" class="prev"><span><<</span> Anterior</a>
+								<ul class="pag">
+									<li><a href="#" class="page-link">1</a></li>
+									<li><a href="#" class="page-link current-page">2</a></li>
+									<li><a href="#" class="page-link">3</a></li>
+									<li><a href="#" class="page-link">4</a></li>
+									<li><a href="#" class="page-link">5</a></li>
+									<li><a href="#" class="page-link">6</a></li>
 								</ul>
+								<a href="#" class="next">Siguiente <span>>></span></a>
 							</div>
-							
 
 						</div>
-							
 
 					</div>
 				</section>
@@ -754,8 +720,6 @@
 								       src="https://developer.android.com/images/brand/es-419_generic_rgb_wo_45.png" />
 								</a>
 							</div>
-							
-
 							<span class="slogan"></span>
 							<a href="https://www.americanexpress.com/argentina" target="_blank">
 								<img class="logo-footer" alt="Libere su potencial" src="assets/images/logo-amex.svg">
@@ -798,11 +762,11 @@
 				
 				<nav role="navigation" id="sideMenu">
 					<ul class="nav-bar" id="sideMainNav">
-						<li><a class="current" href="viajes.html">VIAJES</a></li>
-						<li><a href="categoria.html">GASTRONOMIA</a></li>
+						<li><a href="viajes.html">VIAJES</a></li>
+						<li><a class="current" href="categoria.html">GASTRONOMÍA</a></li>
 						<li><a href="#">COMPRAS</a></li>
 						<li><a href="#">ENTRETENIMIENTOS</a></li>
-						<li><a href="#">UNICOS</a></li>
+						<li><a href="#">ÚNICOS</a></li>
 					</ul>
 				</nav> 			
 			</div>
@@ -817,7 +781,7 @@
 		</script>
 		
 		<script src="assets/javascripts/site.js"></script>
-			
+
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -828,6 +792,5 @@
 		  ga('create', 'UA-XXXXX-X', 'yoursite.com');
 		  ga('send', 'pageview');
 		</script>
-
 	</body>
 </html>

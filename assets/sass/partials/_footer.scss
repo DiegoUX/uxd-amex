@@ -7,10 +7,15 @@ footer{
 	.main-logo{
 		text-align: right;
 		margin-top: 1em;
+		
 		.apps{
 			float: left;
 			padding-top:10px;
 
+		}
+
+		& > div > a {
+		    display: none !important;
 		}
 
 		.google-play-link,.app-store-link{
