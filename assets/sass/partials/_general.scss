@@ -482,11 +482,12 @@ body.category{
                     background: none repeat scroll 0 0 #016891;
                     color: #FFFFFF;
                     font-family: Helvetica,Arial;
-                    font-size: 1.25em;
+                    font-size: 1.1em;
                     font-weight: 100;
                     line-height: 1.6em;
                     padding-left: 10.9%;
-                    padding-right: 10.9%;
+                    padding-right: 5.9%;
+                    padding-top: 4px;
                     cursor: pointer;
 
                     &:after{
@@ -790,7 +791,7 @@ body.two-columns-page{
             }
 
             h2.column-bar{
-                background: none repeat scroll 0 0 #309D44;
+                background: none repeat scroll 0 0 #00344D;
                 border-bottom: 0 none;
                 color: #FFFFFF;
                 font-family: Helvetica;
@@ -806,7 +807,8 @@ body.two-columns-page{
 
                 .left-triangle {
                   border-left: 18px solid rgba(0, 0, 0, 0);
-                  border-top: 11px solid #186227;
+                  // border-top: 11px solid #186227;
+                  border-top: 11px solid #006292;
                   bottom: -10px;
                   display: inline-block;
                   height: 0;
@@ -817,7 +819,8 @@ body.two-columns-page{
                 }
 
                 &:before{
-                    border-bottom: 28px solid #309D44;
+                    // border-bottom: 28px solid #309D44;
+                    border-bottom: 28px solid #00344D;                    
                     border-left: 10px solid rgba(0, 0, 0, 0);
                     border-right: 0 solid rgba(0, 0, 0, 0);
                     content: "";
@@ -830,7 +833,8 @@ body.two-columns-page{
                 }
 
                 &:after{
-                    border-bottom: 28px solid #309D44;
+                    // border-bottom: 28px solid #309D44;
+                    border-bottom: 28px solid #00344D;                    
                     border-right: 10px solid rgba(0, 0, 0, 0);
                     border-left: 0 solid rgba(0, 0, 0, 0);
                     content: "";

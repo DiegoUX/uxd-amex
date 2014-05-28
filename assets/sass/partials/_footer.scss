@@ -23,8 +23,10 @@ footer{
 		}
 		
 		.google-play-link > img {
-		    height: 41px;
+		    height: 40px;
 		    padding-left: 5px;
+		    border-radius: 8px; //little patch
+    		border-right: 1px solid #CCCCCC; //patch
 		}
 
 	}

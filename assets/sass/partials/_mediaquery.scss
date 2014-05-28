@@ -624,6 +624,18 @@
 	
 }
 
+@media only screen and (min-width: 768px) and (max-width: 877px) {
+	body.category .page-content .sidebar-column section.checks-section h3 {
+	    font-size: 0.9em !important;
+	}
+}
+
+@media only screen and (max-width: 275px){
+	footer .main-logo .google-play-link > img, footer .main-logo .app-store-link > img {
+	    margin-top: 10px;
+	}
+}
+
 //only safari and chrome
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	header .desktop-menu nav ul li:last-child a:before {
