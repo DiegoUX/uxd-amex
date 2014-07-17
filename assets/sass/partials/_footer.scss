@@ -5,12 +5,13 @@ footer{
 		}
 
 	.main-logo{
-		text-align: right;
+		// text-align: right;
 		margin-top: 1em;
 		
 		.apps{
-			float: left;
+			// float: left;
 			padding-top:10px;
+			overflow: auto;
 
 		}
 
@@ -20,9 +21,12 @@ footer{
 
 		.google-play-link,.app-store-link{
 			display: inline-block;
+			float: left;
+			
 		}
 		
-		.google-play-link > img {
+		.google-play-link > img,
+		.app-store-link > img{
 		    height: 40px;
 		    padding-left: 5px;
 		    border-radius: 8px; //little patch

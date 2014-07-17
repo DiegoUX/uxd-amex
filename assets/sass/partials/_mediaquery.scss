@@ -107,12 +107,16 @@
 	}
 
 	body{
-			.columns.double-padding-right-large {
+			.double-padding-right-large {
 		    	padding-right: 1.875em;
 			}
 
-			.columns.no-padding-left-large {
-			    padding-left: 0;
+			.no-padding-left-large {
+			    padding-left: 0 !important;
+			}
+
+			.no-padding-right-large {
+			    padding-right: 0 !important;
 			}
 
 	}
@@ -311,6 +315,22 @@
 		body{
 			.no-padding-right-small{
 				padding-right: 0;
+			}
+
+			.no-padding-for-small{
+				padding: 0!important;
+			}
+
+			.banner-footer{
+				margin-top: 10px;
+			}
+
+			.apps > a.app-store-link {
+			    text-align: right !important;
+			}
+
+			.apps > a.google-play-link {
+			    text-align: left !important;
 			}
 
 			header{
